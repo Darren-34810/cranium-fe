@@ -1,7 +1,11 @@
 import logo from "./logo.svg";
 import "./App.css";
 import Button from "./components/Button";
-import TopNavbar from "./TopNavbar";
+import TopNavbar from "./components/TopNavbar";
+import EventCard from "./components/EventCard";
+import PlanCard from "./components/PlanCard";
+import Footer from "./components/Footer";
+import Input from "./components/Input";
 
 function App() {
   return (
@@ -25,6 +29,7 @@ function App() {
           <Button variant="secondary">Button Sub</Button>
         </div>
       </header>
+    <Input/>
     </div>
   );
 }
