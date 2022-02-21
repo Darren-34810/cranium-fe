@@ -1,6 +1,6 @@
 import logo from "./logo.svg";
 import "./App.css";
-import Button from "./Button";
+import Button from "./components/Button";
 import TopNavbar from "./TopNavbar";
 
 function App() {
