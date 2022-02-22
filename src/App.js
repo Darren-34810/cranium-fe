@@ -25,8 +25,9 @@ function App() {
           Learn React
         </a>
         <div className="flex">
-          <Button variant="primary" className="mr-4">Button Prime</Button>
-          <Button variant="secondary">Button Sub</Button>
+          <Button variant="primary">Button Prime</Button>
+          <Button variant="secondary" className="ml-4">Button Sub</Button>
+          <Button variant="tertiary" className="ml-4">Button Ter</Button>
         </div>
       </header>
     <Input/>
