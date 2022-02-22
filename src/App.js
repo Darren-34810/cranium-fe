@@ -77,6 +77,10 @@ function App() {
           </Switch>
         </div>
       </Router>
+      <BoothBanner/>
+      <Image/>
+      <ScheduleCard/>
+      <SpeakerCard/>
     </>
   );
 }

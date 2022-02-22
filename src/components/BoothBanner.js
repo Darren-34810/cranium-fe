@@ -9,7 +9,7 @@ const BoothBanner = ({children, variant, className}) => {
     <div className={`${variant === 'quarter' ? quarter : (variant === 'half' ? half : full)} ${className}`}>{children}
       <div className="flex flex-col items-center w-1/3 p-3">
         <Image variant="square"/>
-        <div className="my-3">
+        <div className="my-3 text-center">
           <h2 className="text-xl text-white font-bold">Booths</h2>
           <p className="text-sm text-white">Booths Details</p>
         </div>
