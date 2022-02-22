@@ -48,7 +48,7 @@ function App() {
         <div className="App">
           <Switch>
             <Redirect exact from={'/'} to={'/welcome'}/>
-            <Route exact path="/welcome" element={<Welcome/>}/>
+            <Route exact path="/welcome" component={Welcome}/>
             <Route exact path={'/dashboard'} component={Dashboard}/>
 
             {/*<Route exact path="/homepage" element={<Homepage />} />*/}
