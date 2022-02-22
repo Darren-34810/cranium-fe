@@ -6,6 +6,10 @@ import EventCard from "./components/EventCard";
 import PlanCard from "./components/PlanCard";
 import Footer from "./components/Footer";
 import Input from "./components/Input";
+import Image from "./components/Image";
+import SpeakerCard from "./components/SpeakerCard";
+import ScheduleCard from "./components/ScheduleCard";
+import BoothBanner from "./components/BoothBanner";
 
 function App() {
   return (
@@ -30,7 +34,11 @@ function App() {
           <Button variant="tertiary" className="ml-4">Button Ter</Button>
         </div>
       </header>
-    <Input/>
+      <Image/>
+      <SpeakerCard/>
+      <Input/>
+      <ScheduleCard/>
+      <BoothBanner variant="quarter"/>
     </div>
   );
 }
