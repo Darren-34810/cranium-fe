@@ -1,16 +1,5 @@
-import logo from "./logo.svg";
 import "./App.css";
 import {BrowserRouter as Router, Switch, Route, Redirect} from "react-router-dom";
-import Button from "./components/Button";
-import TopNavbar from "./components/TopNavbar";
-import EventCard from "./components/EventCard";
-import PlanCard from "./components/PlanCard";
-import Footer from "./components/Footer";
-import Input from "./components/Input";
-import Image from "./components/Image";
-import SpeakerCard from "./components/SpeakerCard";
-import ScheduleCard from "./components/ScheduleCard";
-import BoothBanner from "./components/BoothBanner";
 import Welcome from "./pages/Welcome";
 import Dashboard from "./pages/testing/Dashboard";
 
