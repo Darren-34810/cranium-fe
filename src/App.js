@@ -2,6 +2,8 @@ import "./App.css";
 import {BrowserRouter as Router, Switch, Route, Redirect} from "react-router-dom";
 import Welcome from "./pages/Welcome";
 import Dashboard from "./pages/testing/Dashboard";
+import SpeakerCard from "./components/SpeakerCard";
+import PlanCard from "./components/PlanCard";
 
 function App() {
   return (
@@ -38,6 +40,7 @@ function App() {
         </Switch>
       </div>
     </Router>
+
   );
 }
 

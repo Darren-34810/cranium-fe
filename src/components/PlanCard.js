@@ -1,9 +1,11 @@
-const PlanCard=()=>{
-  return(
+import Image from "./Image";
+
+const PlanCard = () => {
+  return (
     <div className="flex justify-center items-center ">
       <div className="bg-gray-100 rounded-lg m-4 border-2 border-black">
         <div className="h-64 w-64 flex flex-col justify-center items-center">
-          <div className="rounded-full h-16 w-16 bg-black  "/>
+          <Image variant="small"/>
           <p className="text-black text-center py-2">Title</p>
           <p className="text-center py-2 ">Subtitle</p>
           <p className="text-center">Feature 1</p>

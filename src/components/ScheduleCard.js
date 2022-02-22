@@ -22,8 +22,6 @@ const ScheduleCard = () => {
           <p className="mx-3">Sessions</p>
         </div>
       </div>
-
-
       <div className="flex flex-col text-white justify-around w-full p-3">
         <p className="flex items-center py-3">Event Title</p>
         <p className="flex items-center py-3">Event Detail</p>
