@@ -13,7 +13,7 @@ const PlanCard = () => {
           <p className="text-center">Feature 3</p>
         </div>
         <div className="h-32 w-64  flex justify-center items-center">
-          <a href="#" className=" btn-primary">Order Now</a>
+          <a href="/" className=" btn-primary">Order Now</a>
         </div>
       </div>
     </div>

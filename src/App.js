@@ -2,17 +2,17 @@ import "./App.css";
 import {BrowserRouter as Router, Switch, Route, Redirect} from "react-router-dom";
 import Welcome from "./pages/Welcome";
 import Dashboard from "./pages/testing/Dashboard";
-import SpeakerCard from "./components/SpeakerCard";
-import PlanCard from "./components/PlanCard";
+import Homepage from "./pages/Homepage";
 
 function App() {
   return (
     <Router>
-      <div className="App">
+      <div>
         <Switch>
           <Redirect exact from={'/'} to={'/welcome'}/>
           <Route exact path="/welcome" component={Welcome}/>
           <Route exact path={'/dashboard'} component={Dashboard}/>
+          <Route exact path={'/homepage'} component={Homepage}/>
 
           {/*<Route exact path="/homepage" element={<Homepage />} />*/}
           {/*<Route exact path="/event" element={<EventPage />} />*/}
