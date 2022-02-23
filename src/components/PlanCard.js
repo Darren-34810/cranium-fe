@@ -1,22 +1,44 @@
+import Button from "./Button";
 import Image from "./Image";
 
-const PlanCard = () => {
-  return (
-    <div className="flex justify-center items-center ">
-      <div className="bg-gray-100 rounded-lg m-4 border-2 border-black">
-        <div className="h-64 w-64 flex flex-col justify-center items-center">
-          <Image variant="small"/>
-          <p className="text-black text-center py-2">Title</p>
-          <p className="text-center py-2 ">Subtitle</p>
-          <p className="text-center">Feature 1</p>
-          <p className="text-center">Feature 2</p>
-          <p className="text-center">Feature 3</p>
+const PlanCard = (props) => {
+  if (props.variant === "best-seller") {
+    return (
+      <div className="h-[26rem] flex flex-col justify-between items-center text-center bg-neutral-700 border border-neutral-400 rounded-lg shadow px-14 py-12 relative">
+        <div className="ribbon-wrapper">
+          <div className="ribbon">BEST SELLER</div>
         </div>
-        <div className="h-32 w-64  flex justify-center items-center">
-          <a href="/" className=" btn-primary">Order Now</a>
+        <div className="text-neutral-50 -mt-1">
+          <Image variant="small" className="bg-neutral-50 mb-2" />
+          <p className="text-xl">Title</p>
+          <p>Subtitle</p>
         </div>
+        <div className="text-neutral-300 text-sm">
+          <p className="mb-2">Feature 1</p>
+          <p className="mb-2">Feature 2</p>
+          <p>Feature 3</p>
+        </div>
+        <Button variant="primary">Order now</Button>
       </div>
-    </div>
-  )
+    )
+  }
+  else {
+    return (
+      <div className="h-[26rem] flex flex-col justify-between items-center text-center bg-neutral-700 border border-neutral-400 rounded-lg shadow px-14 py-12 relative scale-90">
+        <div className="text-neutral-50 -mt-1">
+          <Image variant="small" className="bg-neutral-50 mb-2" />
+          <p className="text-xl">Title</p>
+          <p>Subtitle</p>
+        </div>
+        <div className="text-neutral-300 text-sm">
+          <p className="mb-2">Feature 1</p>
+          <p className="mb-2">Feature 2</p>
+          <p>Feature 3</p>
+        </div>
+        <Button variant="secondary">Order now</Button>
+      </div>
+    )
+  }
 }
+
 export default PlanCard

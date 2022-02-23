@@ -24,30 +24,12 @@
     .bg-from-500-to-600 {
         @apply bg-gradient-to-b from-primary-500 to-primary-600;
     }
-}
 
-.ribbon-wrapper {
-    width: 85px;
-    height: 88px;
-    overflow: hidden;
-    position: absolute;
-    top: -3px;
-    right: -3px;
-}
+    .ribbon-wrapper {
+        @apply w-32 h-32 overflow-hidden absolute -top-0.5 -right-0.5;
+    }
 
-.ribbon {
-    font: bold 11px sans-serif;
-    color: #333;
-    text-align: center;
-    -webkit-transform: rotate(45deg);
-    -moz-transform:    rotate(45deg);
-    -ms-transform:     rotate(45deg);
-    -o-transform:      rotate(45deg);
-    position: relative;
-    padding: 7px 0;
-    top: 20px;
-    right: 8px;
-    width: 120px;
-    background-color: #52E2C0;
-    color: #000;
+    .ribbon {
+        @apply text-primary-500 text-center text-sm font-bold tracking-wide bg-secondary-500 relative top-7 right-16 w-72 py-3 rotate-45;
+    }
 }

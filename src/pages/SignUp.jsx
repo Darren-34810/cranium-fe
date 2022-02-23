@@ -6,7 +6,7 @@ const SignUp = () => {
     <>
       <div className="min-h-screen bg-from-600-to-500 flex justify-center items-center text-neutral-50 transition-all">
         <div className="max-w-4xl flex flex-col md:flex-row justify-evenly items-center py-16 md:py-0">
-      <div className="w-[90%] md:w-2/5 mb-16 md:mb-0 flex flex-col justify-center">
+          <div className="w-[90%] md:w-2/5 mb-16 md:mb-0 flex flex-col justify-center">
             <p className="mb-6 text-2xl">Sign up to Cranium</p>
             <p className="mb-4">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Atque adipisci necessitatibus voluptatem accusamus vero deleniti hic dignissimos illum nam.</p>
             <div>
