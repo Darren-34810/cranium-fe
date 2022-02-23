@@ -6,6 +6,7 @@ import SignIn from "./pages/SignIn";
 import SignUp from "./pages/SignUp";
 import EventLandingPage from "./pages/EventLandingPage";
 import TestCard from "./pages/testing/TestCard";
+import Profile from "./pages/HomeDashboard/Profile";
 
 function App() {
   return (
@@ -17,6 +18,7 @@ function App() {
         <Route exact path={'/homepage'} component={Homepage}/>
         <Route exact path={'/event-landing-page'} component={EventLandingPage}/>
         <Route exact path={'/testcard'} component={TestCard}/>
+        <Route exact path={'/profile'} component={Profile}/>
 
         {/*<Route exact path="/event" component={EventPage} />*/}
         {/*<Route exact path="/eventlanding" component={EventLandingPage} />*/}
