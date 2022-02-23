@@ -4,6 +4,7 @@ import Dashboard from "./pages/testing/Dashboard";
 import Homepage from "./pages/Homepage";
 import SignIn from "./pages/SignIn";
 import SignUp from "./pages/SignUp";
+import EventLandingPage from "./pages/EventLandingPage";
 
 function App() {
   return (
@@ -13,7 +14,8 @@ function App() {
         <Route exact path="/welcome" component={Welcome}/>
         <Route exact path={'/dashboard'} component={Dashboard}/>
         <Route exact path={'/homepage'} component={Homepage}/>
-        
+        <Route exact path={'/event-landing-page'} component={EventLandingPage}/>
+
         {/*<Route exact path="/event" component={EventPage} />*/}
         {/*<Route exact path="/eventlanding" component={EventLandingPage} />*/}
         <Route exact path="/signin" component={SignIn} />
