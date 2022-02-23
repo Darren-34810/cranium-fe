@@ -1,5 +1,5 @@
 const Input = (props) => {
-  const style = 'bg-neutral-700 border border-neutral-400 rounded text-sm px-5 py-3 w-full'
+  const style = 'bg-neutral-700 border border-neutral-400 focus:outline focus:outline-neutral-400 rounded text-sm px-5 py-3 w-full transition-all'
   if (props.type === "file") {
     return (
       <>
