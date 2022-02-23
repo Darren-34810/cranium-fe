@@ -2,6 +2,8 @@ import {BrowserRouter as Router, Switch, Route, Redirect} from "react-router-dom
 import Welcome from "./pages/Welcome";
 import Dashboard from "./pages/testing/Dashboard";
 import Homepage from "./pages/Homepage";
+import SignIn from "./pages/SignIn";
+import SignUp from "./pages/SignUp";
 
 function App() {
   return (
@@ -11,30 +13,29 @@ function App() {
         <Route exact path="/welcome" component={Welcome}/>
         <Route exact path={'/dashboard'} component={Dashboard}/>
         <Route exact path={'/homepage'} component={Homepage}/>
-
-        {/*<Route exact path="/homepage" element={<Homepage />} />*/}
-        {/*<Route exact path="/event" element={<EventPage />} />*/}
-        {/*<Route exact path="/eventlanding" element={<EventLandingPage />} />*/}
-        {/*<Route exact path="/signin" element={<SignIn />} />*/}
-        {/*<Route exact path="/signup" element={<SignUp />} />*/}
-        {/*<Route exact path="/dashboard" element={<DashboardOverview />} />*/}
-        {/*<Route exact path="/dashboard/overview" element={<DashboardOverview />} />*/}
-        {/*<Route exact path="/dashboard/events" element={<DashboardEvents />} />*/}
-        {/*<Route exact path="/dashboard/create" element={<DashboardCreate />} />*/}
-        {/*<Route exact path="/dashboard/billing" element={<DashboardBilling />} />*/}
-        {/*<Route exact path="/dashboard/integration" element={<DashboardIntegration />} />*/}
-        {/*<Route exact path="/dashboard/events" element={<DashboardEvents />} />*/}
-        {/*<Route exact path="/dashboard/profile" element={<DashboardProfile />} />*/}
-        {/*<Route exact path="/dashboard/events/overview" element={<EventDashboardOverview />} />*/}
-        {/*<Route exact path="/dashboard/events/setup" element={<EventDashboardBasicSetup />} />*/}
-        {/*<Route exact path="/dashboard/events/registration" element={<EventDashboardRegistration />} />*/}
-        {/*<Route exact path="/dashboard/events/schedule" element={<EventDashboardSchedule />} />*/}
-        {/*<Route exact path="/dashboard/events/venue" element={<EventDashboardVenue />} />*/}
-        {/*<Route exact path="/dashboard/events/people" element={<EventDashboardPeople />} />*/}
-        {/*<Route exact path="/dashboard/events/marketing" element={<EventDashboardMarketing />} />*/}
-        {/*<Route exact path="/dashboard/events/recording" element={<EventDashboardRecording />} />*/}
-        {/*<Route exact path="/dashboard/events/analytics" element={<EventDashboardAnalytics />} />*/}
-        {/*<Route path="*" element={<NotFound />} />*/}
+        
+        {/*<Route exact path="/event" component={EventPage} />*/}
+        {/*<Route exact path="/eventlanding" component={EventLandingPage} />*/}
+        <Route exact path="/signin" component={SignIn} />
+        <Route exact path="/signup" component={SignUp} />
+        {/*<Route exact path="/dashboard" component={DashboardOverview} />*/}
+        {/*<Route exact path="/dashboard/overview" component={DashboardOverview} />*/}
+        {/*<Route exact path="/dashboard/events" component={DashboardEvents} />*/}
+        {/*<Route exact path="/dashboard/create" component={DashboardCreate} />*/}
+        {/*<Route exact path="/dashboard/billing" component={DashboardBilling} />*/}
+        {/*<Route exact path="/dashboard/integration" component={DashboardIntegration} />*/}
+        {/*<Route exact path="/dashboard/events" component={DashboardEvents} />*/}
+        {/*<Route exact path="/dashboard/profile" component={DashboardProfile} />*/}
+        {/*<Route exact path="/dashboard/events/overview" component={EventDashboardOverview} />*/}
+        {/*<Route exact path="/dashboard/events/setup" component={EventDashboardBasicSetup} />*/}
+        {/*<Route exact path="/dashboard/events/registration" component={EventDashboardRegistration} />*/}
+        {/*<Route exact path="/dashboard/events/schedule" component={EventDashboardSchedule} />*/}
+        {/*<Route exact path="/dashboard/events/venue" component={EventDashboardVenue} />*/}
+        {/*<Route exact path="/dashboard/events/people" component={EventDashboardPeople} />*/}
+        {/*<Route exact path="/dashboard/events/marketing" component={EventDashboardMarketing} />*/}
+        {/*<Route exact path="/dashboard/events/recording" component={EventDashboardRecording} />*/}
+        {/*<Route exact path="/dashboard/events/analytics" component={EventDashboardAnalytics} />*/}
+        {/*<Route path="*" component={NotFound} />*/}
       </Switch>
     </Router>
   );

@@ -1,6 +1,6 @@
-const Input = ({type, className}) => {
-  const style = 'bg-neutral-700 border border-neutral-400 rounded text-base px-5 py-3 w-full'
-  if (type === "file") {
+const Input = (props) => {
+  const style = 'bg-neutral-700 border border-neutral-400 rounded text-sm px-5 py-3 w-full'
+  if (props.type === "file") {
     return (
       <>
       <label for="file-upload" className="btn-secondary">
@@ -10,11 +10,11 @@ const Input = ({type, className}) => {
       </>
     )
   }
-  else if (type === "textarea") {
-    return <textarea className={`${style} ${className ?? ''}`}></textarea>
+  else if (props.type === "textarea") {
+    return <textarea placeholder={props.placeholder} className={`${style} ${props.className ?? ''}`}></textarea>
   }
   else {
-    return <input type={type} className={`${style} ${className ?? ''}`} />
+    return <input type={props.type} placeholder={props.placeholder} className={`${style} ${props.className ?? ''}`} />
   }
 }
 
