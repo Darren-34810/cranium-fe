@@ -4,7 +4,7 @@ import TopNavbar from "../components/TopNavbar";
 const EventLandingPage = () => {
   return (
     <>
-      <TopNavbar/>
+
 
       <section className="flex flex-col h-screen md:flex-row bg-primary-500">
         <div className="flex-auto ml-auto mt-0 w-96 h-80">
