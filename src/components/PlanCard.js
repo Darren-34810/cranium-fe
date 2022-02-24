@@ -1,10 +1,10 @@
 import Button from "./Button";
 import Image from "./Image";
 
-const PlanCard = (props) => {
-  if (props.variant === "best-seller") {
+const PlanCard = ({variant, className}) => {
+  if (variant === "best-seller") {
     return (
-      <div className="h-[26rem] flex flex-col justify-between items-center text-center bg-neutral-700 border border-neutral-400 rounded-lg shadow px-14 py-12 relative">
+      <div className={`h-[26rem] flex flex-col justify-between items-center text-center bg-neutral-700 border border-neutral-400 rounded-lg shadow px-14 py-12 relative ${className ?? ''}`}>
         <div className="ribbon-wrapper">
           <div className="ribbon">BEST SELLER</div>
         </div>
@@ -24,7 +24,7 @@ const PlanCard = (props) => {
   }
   else {
     return (
-      <div className="h-[26rem] flex flex-col justify-between items-center text-center bg-neutral-700 border border-neutral-400 rounded-lg shadow px-14 py-12 relative scale-90">
+      <div className={`h-[26rem] flex flex-col justify-between items-center text-center bg-neutral-700 border border-neutral-400 rounded-lg shadow px-14 py-12 relative scale-90 ${className ?? ''}`}>
         <div className="text-neutral-50 -mt-1">
           <Image variant="small" className="bg-neutral-50 mb-2" />
           <p className="text-xl">Title</p>

@@ -1,4 +1,7 @@
 import TopNavbar from "../components/TopNavbar";
+import Image from "../components/Image";
+import PlanCard from "../components/PlanCard";
+import EventCard from "../components/EventCard";
 
 
 const Homepage = () => {
@@ -30,7 +33,7 @@ const Homepage = () => {
 
 
       <div className="bg-gradient-to-b from-primary-700 via-primary-500 to-primary-700">
-        <h2 className="text-center text-2xl font-bold py-6 text-white"> Our Client</h2>
+        <h2 className="text-center text-2xl font-bold py-6 text-white">Our Clients</h2>
         <div className="flex justify-center">
           <div className="rounded-full lg:h-28 lg:w-28 md:h-14 md:w-14 bg-gray-500 m-8"></div>
           <div className="rounded-full lg:h-28 lg:w-28 md:h-14 md:w-14 bg-gray-500 m-8"></div>
@@ -49,43 +52,15 @@ const Homepage = () => {
             sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
         </div>
 
-        <div className=" grid grid-cols-2 lg:grid-cols-4 gap-2 ">
-          <div className="flex card justify-center mb-32">
-            <div className=" h-64 w-64 border-gray-600 rounded-lg m-4">
-              <div className="h-64 w-64 bg-gray-100 border-2 "></div>
-              <div className="h-32 w-64 border-2 border-gray-600 rounded-b-lg bg-neutral-700 text-white">
-                <p className="p-4 mb-4">Events #1</p>
-                <p className="p-4"> See More..</p>
-              </div>
-            </div>
-          </div>
-          <div className="flex card justify-center mb-32">
-            <div className=" h-64 w-64 border-gray-600 rounded-lg m-4">
-              <div className="h-64 w-64 bg-gray-100 border-2 "></div>
-              <div className="h-32 w-64 border-2 border-gray-600 rounded-b-lg bg-neutral-700 text-white">
-                <p className="p-4 mb-4">Events #1</p>
-                <p className="p-4"> See More..</p>
-              </div>
-            </div>
-          </div>
-          <div className="flex card justify-center mb-32">
-            <div className=" h-64 w-64 border-gray-600 rounded-lg m-4">
-              <div className="h-64 w-64 bg-gray-100 border-2 "></div>
-              <div className="h-32 w-64 border-2 border-gray-600 rounded-b-lg bg-neutral-700 text-white">
-                <p className="p-4 mb-4">Events #1</p>
-                <p className="p-4"> See More..</p>
-              </div>
-            </div>
-          </div>
-          <div className="flex card justify-center mb-32">
-            <div className=" h-64 w-64 border-gray-600 rounded-lg m-4">
-              <div className="h-64 w-64 bg-gray-100 border-2 "></div>
-              <div className="h-32 w-64 border-2 border-gray-600 rounded-b-lg bg-neutral-700 text-white">
-                <p className="p-4 mb-4">Events #1</p>
-                <p className="p-4"> See More..</p>
-              </div>
-            </div>
-          </div>
+        <div className="grid grid-cols-2 lg:grid-cols-4 gap-6 justify-items-center">
+          <EventCard />
+          <EventCard />
+          <EventCard />
+          <EventCard />
+          <EventCard />
+          <EventCard />
+          <EventCard />
+          <EventCard />
         </div>
       </div>
 
@@ -102,7 +77,7 @@ const Homepage = () => {
               et
               dolore magna aliqua.
             </p>
-            <div className="pb-8 pt-2 text-gray-400">
+            <div className="pb-8 pt-2 ml-5 text-gray-400">
               <li>Feature 1</li>
               <li>Feature 2</li>
               <li>Feature 3</li>
@@ -120,60 +95,15 @@ const Homepage = () => {
 
 
 
-      <div className="bg-primary-700">
+      <div className="bg-primary-700 pb-16">
         <div className="h-auto">
           <h1 className="py-4 text-2xl font-bold text-white text-center">Account Plans</h1>
           <p className="py-6 mb-4 text-gray-400 text-center">Lorem ipsum dolor sit amet, consectetur adipiscing elit,
             sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-          <div className="grid grid-cols-2 lg:grid-cols-3 gap-2 w-auto ">
-            <div className="flex justify-center">
-              <div className="bg-neutral-700 h-100 w-64 rounded-lg m-4 border-2 border-gray-600">
-                <div className="h-64 w-64 flex flex-col justify-center items-center">
-                  <div className="rounded-full h-16 w-16 bg-gray-400  "></div>
-                  <p className="text-gray-400 text-center py-2">Title</p>
-                  <p className="text-gray-400 text-center py-2 ">Subtitle</p>
-                  <p className="text-gray-400 text-center">Feature 1</p>
-                  <p className="text-gray-400 text-center">Feature 2</p>
-                  <p className="text-gray-400 text-center">Feature 3</p>
-                </div>
-                <div className="h-32 w-64  flex justify-center items-center">
-                  <a href="/" className=" btn-primary">Order Now</a>
-                </div>
-              </div>
-            </div>
-            <div className="flex justify-center">
-              <div className="bg-neutral-700 h-100 w-64 rounded-lg m-4 border-2 border-gray-600 relative">
-                <div className="h-64 w-64 flex flex-col justify-center items-center">
-                  <div className="rounded-full h-16 w-16 bg-gray-400  "></div>
-                  <div className="ribbon-wrapper">
-                    <div className="ribbon bg-secondary text-white">BEST SELLER</div>
-                  </div>
-                  <p className="text-gray-400 text-center py-2">Title</p>
-                  <p className="text-gray-400 text-center py-2 ">Subtitle</p>
-                  <p className="text-gray-400 text-center">Feature 1</p>
-                  <p className="text-gray-400 text-center">Feature 2</p>
-                  <p className="text-gray-400 text-center">Feature 3</p>
-                </div>
-                <div className="h-32 w-64  flex justify-center items-center">
-                  <a href="/" className=" btn-primary">Order Now</a>
-                </div>
-              </div>
-            </div>
-            <div className="flex justify-center col-span-2 lg:col-span-1">
-              <div className="bg-neutral-700 h-100 w-64 rounded-lg m-4 border-2 border-gray-600">
-                <div className="h-64 w-64 flex flex-col justify-center items-center">
-                  <div className="rounded-full h-16 w-16 bg-gray-400  "></div>
-                  <p className="text-gray-400 text-center py-2">Title</p>
-                  <p className="text-gray-400 text-center py-2 ">Subtitle</p>
-                  <p className="text-gray-400 text-center">Feature 1</p>
-                  <p className="text-gray-400 text-center">Feature 2</p>
-                  <p className="text-gray-400 text-center">Feature 3</p>
-                </div>
-                <div className="h-32 w-64  flex justify-center items-center">
-                  <a href="/" className=" btn-primary">Order Now</a>
-                </div>
-              </div>
-            </div>
+          <div className="flex justify-center flex-wrap">
+            <PlanCard />
+            <PlanCard variant="best-seller" className="mx-8" />
+            <PlanCard />
           </div>
         </div>
       </div>
