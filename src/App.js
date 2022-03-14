@@ -9,6 +9,9 @@ import TestCard from "./pages/testing/TestCard";
 import Profile from "./pages/HomeDashboard/Profile";
 import EventPage from "./pages/HomeDashboard/EventPage";
 import Overview from "./pages/HomeDashboard/Overview";
+import DataConfiguration1 from "./pages/EventDashboard/DataConfiguration1";
+import DataConfiguration2 from "./pages/EventDashboard/DataConfiguration2";
+import DataConfiguration3 from "./pages/EventDashboard/DataConfiguration3";
 
 function App() {
   return (
@@ -23,6 +26,9 @@ function App() {
         <Route exact path={'/profile'} component={Profile}/>
         <Route exact path={'/event-page'} component={EventPage}/>
         <Route exact path={'/overview'} component={Overview}/>
+        <Route exact path={'/data-configuration-1'} component={DataConfiguration1}/>
+        <Route exact path={'/data-configuration-2'} component={DataConfiguration2}/>
+        <Route exact path={'/data-configuration-3'} component={DataConfiguration3}/>
 
 
         {/*<Route exact path="/event" component={EventPage} />*/}
