@@ -17,6 +17,7 @@ import OverviewEvent from "./pages/EventDashboard/OverviewEvent";
 import BasicSetup from "./pages/EventDashboard/BasicSetup";
 import Themes from "./pages/EventDashboard/Themes";
 import PreviewMain from "./pages/EventDashboard/PreviewMain";
+import Billing from "./pages/HomeDashboard/Billing";
 
 function App() {
   return (
@@ -39,7 +40,7 @@ function App() {
         <Route exact path={'/basic-setup'} component={BasicSetup}/>
         <Route exact path={'/themes'} component={Themes}/>
         <Route exact path={'/preview-main'} component={PreviewMain}/>
-
+        <Route exact path={'/billing'} component={Billing}/>
 
         {/*<Route exact path="/event" component={EventPage} />*/}
         {/*<Route exact path="/eventlanding" component={EventLandingPage} />*/}
