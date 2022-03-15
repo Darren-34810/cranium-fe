@@ -18,6 +18,8 @@ import BasicSetup from "./pages/EventDashboard/BasicSetup";
 import Themes from "./pages/EventDashboard/Themes";
 import PreviewMain from "./pages/EventDashboard/PreviewMain";
 import Billing from "./pages/HomeDashboard/Billing";
+import Tier from "./pages/EventDashboard/Tier";
+import Attendance from "./pages/EventDashboard/Attendance";
 
 function App() {
   return (
@@ -41,6 +43,8 @@ function App() {
         <Route exact path={'/themes'} component={Themes}/>
         <Route exact path={'/preview-main'} component={PreviewMain}/>
         <Route exact path={'/billing'} component={Billing}/>
+        <Route exact path={'/tier'} component={Tier}/>
+        <Route exact path={'/attendance'} component={Attendance}/>
 
         {/*<Route exact path="/event" component={EventPage} />*/}
         {/*<Route exact path="/eventlanding" component={EventLandingPage} />*/}
