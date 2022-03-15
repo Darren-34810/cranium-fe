@@ -13,6 +13,10 @@ import DataConfiguration1 from "./pages/EventDashboard/DataConfiguration1";
 import DataConfiguration2 from "./pages/EventDashboard/DataConfiguration2";
 import DataConfiguration3 from "./pages/EventDashboard/DataConfiguration3";
 import LandingPage from "./pages/LandingPage";
+import OverviewEvent from "./pages/EventDashboard/OverviewEvent";
+import BasicSetup from "./pages/EventDashboard/BasicSetup";
+import Themes from "./pages/EventDashboard/Themes";
+import PreviewMain from "./pages/EventDashboard/PreviewMain";
 
 function App() {
   return (
@@ -31,6 +35,10 @@ function App() {
         <Route exact path={'/data-configuration-2'} component={DataConfiguration2}/>
         <Route exact path={'/data-configuration-3'} component={DataConfiguration3}/>
         <Route exact path={'/landing-page'} component={LandingPage}/>
+        <Route exact path={'/overview-event'} component={OverviewEvent}/>
+        <Route exact path={'/basic-setup'} component={BasicSetup}/>
+        <Route exact path={'/themes'} component={Themes}/>
+        <Route exact path={'/preview-main'} component={PreviewMain}/>
 
 
         {/*<Route exact path="/event" component={EventPage} />*/}
