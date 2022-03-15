@@ -19,7 +19,8 @@ import Themes from "./pages/EventDashboard/Themes";
 import PreviewMain from "./pages/EventDashboard/PreviewMain";
 import Billing from "./pages/HomeDashboard/Billing";
 import Tier from "./pages/EventDashboard/Tier";
-import Attendance from "./pages/EventDashboard/Attendance";
+import Recording from "./pages/EventDashboard/Recording";
+import AttendanceForm from "./pages/EventDashboard/AttendanceForm";
 
 function App() {
   return (
@@ -44,7 +45,8 @@ function App() {
         <Route exact path={'/preview-main'} component={PreviewMain}/>
         <Route exact path={'/billing'} component={Billing}/>
         <Route exact path={'/tier'} component={Tier}/>
-        <Route exact path={'/attendance'} component={Attendance}/>
+        <Route exact path={'/attendance'} component={AttendanceForm}/>
+        <Route exact path={'/recording'} component={Recording}/>
 
         {/*<Route exact path="/event" component={EventPage} />*/}
         {/*<Route exact path="/eventlanding" component={EventLandingPage} />*/}
