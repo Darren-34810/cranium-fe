@@ -4,6 +4,16 @@
 @tailwind components;
 @tailwind utilities;
 
+@layer base {
+    body {
+        @apply text-neutral-50;
+    }
+    
+    h1, h2, h3, h4, h5, h6 {
+        @apply font-['Poppins'];
+    }
+}
+
 @layer components {
     .btn-primary {
         @apply border-2 border-secondary-500 bg-secondary-500 text-primary-500 text-sm font-semibold text-center min-w-[10rem] px-5 py-3 rounded-md cursor-pointer inline-block transition-all duration-300 hover:bg-secondary-300 hover:border-secondary-300 hover:shadow-md hover:shadow-secondary-900 hover:-translate-y-1;
@@ -31,5 +41,21 @@
 
     .ribbon {
         @apply text-primary-500 text-center text-sm font-bold tracking-wide bg-secondary-500 relative top-7 right-16 w-72 py-3 rotate-45;
+    }
+
+    .vl {
+        @apply h-[50px] w-0.5 border-l-2 border-secondary-500 mr-4 shadow-[0_0_8px] shadow-secondary-500;
+    }
+
+    .vl-2 {
+        @apply h-[100px] w-0.5 border-l-2 border-secondary-500 mr-4 shadow-[0_0_8px] shadow-secondary-500;
+    }
+
+    .hl {
+        @apply w-[50px] h-0.5 border-t-2 border-secondary-500 mb-4 shadow-[0_0_8px] shadow-secondary-500;
+    }
+
+    .hl-2 {
+        @apply w-[100px] h-0.5 border-t-2 border-secondary-500 mb-4 shadow-[0_0_8px] shadow-secondary-500;
     }
 }
