@@ -3,7 +3,7 @@ import { useState, useEffect, useRef } from "react"
 /**
  * Button Component
  * @param {String} children - Contents inside the button tag
- * @param {Boolean} isCustom - Button uses clip-path (custom) or rounded corners (original)
+ * @param {Boolean} isCustom - Button uses clip-path (custom) or rounded corners (original): <button isCustom={true}>
  * @param {String} type - Button type: <button type="button|submit|reset"> 
  * @param {String} size - Button size: <button size="large|medium"> 
  * @param {String} variant - Button variant: <button variant="primary|secondary|tertiary"> 
@@ -49,8 +49,6 @@ const Button = ({ children, isCustom, type, size, variant, className }) => {
 
   useEffect(() => {
     setHeight(ref.current.offsetHeight)
-    console.log(ref.current);
-    console.log(ref.current.offsetWidth + ' ' + ref.current.offsetHeight)
   }, [height])
 
   return (
