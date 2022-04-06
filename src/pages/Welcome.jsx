@@ -1,3 +1,4 @@
+import Button from "../components/Button";
 import TopNavbar from "../components/TopNavbar";
 
 
@@ -29,12 +30,12 @@ const Welcome = () => {
           className="bg-primary-700 flex justify-between items-center">
           <div className="flex flex-col max-w-xs my-4">
             <div className="bg-gray-100 w-10 h-10 mb-4">img</div>
-            <h6 className="text-md font-bold mb-3">Platform Development</h6>
+            <h6 className="text-md font-bold mb-2">Platform Development</h6>
             <p className="text-xs text-neutral-400">Membangun virtual space berbasis web sebagai wadah semua aktivitas digital Anda, seperti: webinar, hybrid event, pameran, conference, corporate event, workshops, entertainment dan acara online lainnya</p>
           </div>
           <div className="flex flex-col max-w-xs my-4 ml-20">
             <div className="bg-gray-100 w-10 h-10 mb-4">img</div>
-            <h6 className="text-md font-bold mb-3">Event Organizer</h6>
+            <h6 className="text-md font-bold mb-2">Event Organizer</h6>
             <p className="text-xs text-neutral-400">Menciptakan pengalaman acara online dan offline yang terintegrasi dengan mengelola hybrid event Anda mulai dari pembuatan konsep, perencanaan, produksi, talent management, hingga pelaksanaan acara</p>
           </div>
         </div>
@@ -57,7 +58,7 @@ const Welcome = () => {
       </div>
 
       {/* Experience Live */}
-      <div className="bg-primary-700 h-screen 2xl:h-screen">
+      <div className="bg-primary-700 min0h-screen">
         <div className="h-screen flex justify-between items-center px-20">
           <div className="w-4/12 flex flex-col">
             <div className="flex items-center mb-3">
@@ -65,14 +66,14 @@ const Welcome = () => {
               <h2 className="text-2xl md:text-4xl font-bold">Take Your Event to The Next Level</h2>
             </div>
             <p className="text-neutral-400 mb-4">Ciptakan pengalaman unik dan bermakna dengan menjelajahi virtual space milik Anda</p>
-            <p className="text-neutral-400">
+            <div className="text-neutral-400">
               <b><i>Mengapa menggunakan virtual reality?</i></b>
               <ul className="list-disc ml-4">
                 <li>Membuat acara hybrid yang variatif</li>
                 <li>Meningkatkan konversi dalam acara untuk mendukung tujuan bisnis/event</li>
                 <li>Memperoleh data yang lebih relevan dengan lebih mudah</li>
               </ul>
-            </p>
+            </div>
           </div>
           <div className="w-7/12">
             <div className="w-full h-80 bg-white text-black rounded-lg shadow-[0_0_100px_rgba(0,0,0,0.25)]">content</div>
@@ -85,7 +86,7 @@ const Welcome = () => {
         <div className="hl"></div>
         <h2 className="text-2xl md:text-4xl font-bold">Contact Us</h2>
         <p className="mt-8">xxxx</p>
-        <p className="mt-8">Contact Us</p>
+        <Button variant="primary" size="large" isCustom={true} className="mt-8">Contact Us</Button>
       </div>
 
       {/* Footer */}

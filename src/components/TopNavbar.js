@@ -8,7 +8,7 @@ const TopNavbar = () => {
   }
 
   return (
-    <nav className="flex items-center justify-between flex-wrap bg-primary-600 px-6 py-4 fixed w-full z-10 top-0">
+    <nav className="flex items-center justify-between flex-wrap bg-primary-500 px-6 py-4 fixed w-full z-10 top-0">
       <a href="/" className="text-2xl font-semibold text-white">
         Cranium
       </a>

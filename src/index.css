@@ -15,16 +15,64 @@
 }
 
 @layer components {
+    .btn {
+        @apply
+        text-sm
+        font-semibold
+        cursor-pointer
+        inline-block
+        transition-all
+        duration-300
+        hover:-translate-y-1
+    }
+
+    .btn-border {
+        @apply
+        border-2
+        border-secondary-500
+        shadow-md
+        shadow-secondary-900
+    }
+
     .btn-primary {
-        @apply border-2 border-secondary-500 bg-secondary-500 text-primary-500 text-sm font-semibold text-center min-w-[10rem] px-5 py-3 rounded-md cursor-pointer inline-block transition-all duration-300 hover:bg-secondary-300 hover:border-secondary-300 hover:shadow-md hover:shadow-secondary-900 hover:-translate-y-1;
+        @apply
+        btn-border
+        bg-secondary-500
+        text-neutral-900
+        hover:bg-secondary-300
+        hover:border-secondary-300
     }
 
     .btn-secondary {
-        @apply border-2 border-secondary-500 text-secondary-500 text-sm font-semibold text-center min-w-[10rem] px-5 py-3 rounded-md cursor-pointer inline-block transition-all duration-300 hover:bg-secondary-500 hover:text-primary-500 hover:shadow-md hover:shadow-secondary-900 hover:-translate-y-1;
+        @apply
+        btn-border
+        text-secondary-500
+        hover:bg-secondary-500
+        hover:text-secondary-500
     }
 
     .btn-tertiary {
-        @apply text-secondary-500 text-sm font-semibold underline cursor-pointer inline-block transition-all duration-300 hover:text-secondary-300 hover:-translate-y-1;
+        @apply
+        text-secondary-500
+        underline
+    }
+
+    .btn-lg {
+        @apply
+        min-w-[160px]
+        h-[48px]
+    }
+
+    .btn-md {
+        @apply
+        min-w-[140px]
+        h-[42px]
+    }
+
+    .btn-full {
+        @apply
+        w-full
+        h-auto
     }
 
     .bg-from-600-to-500 {
