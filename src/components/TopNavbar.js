@@ -8,9 +8,9 @@ const TopNavbar = () => {
   }
 
   return (
-    <nav className="flex items-center justify-between flex-wrap bg-primary-500 px-6 py-4 fixed w-full z-10 top-0">
-      <a href="/" className="text-2xl font-semibold text-white">
-        Cranium
+    <nav className="flex items-center justify-between flex-wrap bg-primary-500 px-8 py-5 w-full z-10 top-0">
+      <a href="/" className="text-2xl font-bold text-white">
+        TEMU
       </a>
 
       <div className="block sm:hidden">
@@ -28,14 +28,14 @@ const TopNavbar = () => {
       <div className="w-full hidden sm:flex sm:items-center sm:w-auto pt-6 sm:pt-0"
         ref={navContentRef}>
         <ul className="sm:flex justify-end flex-1 items-center">
-          <li className="ml-0 sm:ml-6 text-left">
+          <li className="ml-0 sm:ml-6 font-semibold">
             <a href="#services" className="inline-block py-2 sm:py-0 text-white no-underline hover:text-secondary-500 transition">Services</a>
           </li>
-          <li className="ml-0 sm:ml-6 text-left">
-            <a href="#features" className="inline-block py-2 sm:py-0 text-white no-underline hover:text-secondary-500 transition">Features</a>
+          <li className="ml-0 sm:ml-6 font-semibold">
+            <a href="#live" className="inline-block py-2 sm:py-0 text-white no-underline hover:text-secondary-500 transition">Experience Live</a>
           </li>
-          <li className="ml-0 sm:ml-6 text-left">
-            <a href="#contact" className="inline-block py-2 sm:py-0 text-white no-underline hover:text-secondary-500 transition">Contact</a>
+          <li className="ml-0 sm:ml-6 font-semibold">
+            <a href="#contact" className="inline-block py-2 sm:py-0 text-white no-underline hover:text-secondary-500 transition">Contact Us</a>
           </li>
         </ul>
       </div>

@@ -1,10 +1,12 @@
 import Button from "../components/Button";
+import Footer from "../components/Footer";
 import TopNavbar from "../components/TopNavbar";
 
 
 const Welcome = () => {
   return (
-    <div>
+    <div className="scroll-smooth">
+      {/* Header */}
       <TopNavbar />
 
       {/* Hero */}
@@ -18,11 +20,11 @@ const Welcome = () => {
       </div>
 
       {/* Services */}
-      <div
+      <div id="services"
         className="bg-primary-700 flex justify-between items-center px-24 py-36">
-        <div className="flex items-center">
+        <div className="flex items-stretch">
           <div className="vl"></div>
-          <h2 className="text-2xl md:text-4xl font-bold">
+          <h2 className="text-2xl md:text-4xl font-bold py-1">
             Our Services
           </h2>
         </div>
@@ -43,14 +45,14 @@ const Welcome = () => {
 
       {/* Build Seamless */}
       <div className="bg-primary-800 h-screen flex justify-center items-center overflow-hidden">
-        <div className="w-3/6 h-full bg-white rounded-r-lg shadow-[0_0_100px_rgba(0,0,0,0.25)]">
+        <div className="w-3/6 h-full bg-white rounded-r-lg shadow-black">
           img
         </div>
         <div className="w-3/6 h-full flex flex-col justify-center items-center px-20">
           <div>
-            <div className="flex items-center mb-3">
+            <div className="flex items-stretch mb-3">
               <div className="vl-2"></div>
-              <h2 className="text-2xl md:text-4xl font-bold">Build Seamless Offline & Online Event Experience</h2>
+              <h2 className="text-2xl md:text-4xl font-bold py-1">Build Seamless Offline & Online Event Experience</h2>
             </div>
             <p className="text-neutral-400">Berikan pengalaman yang berkesan dan serupa bagi audience online maupun offline melalui program acara hybrid yang dikemas khusus dan unik bagi kebutuhan Anda</p>
           </div>
@@ -58,12 +60,12 @@ const Welcome = () => {
       </div>
 
       {/* Experience Live */}
-      <div className="bg-primary-700 min0h-screen">
+      <div id="live" className="bg-primary-700 min0h-screen">
         <div className="h-screen flex justify-between items-center px-20">
-          <div className="w-4/12 flex flex-col">
-            <div className="flex items-center mb-3">
+          <div className="w-4/12 flex flex-col items-start">
+            <div className="flex items-stretch mb-3">
               <div className="vl-2"></div>
-              <h2 className="text-2xl md:text-4xl font-bold">Take Your Event to The Next Level</h2>
+              <h2 className="text-2xl md:text-4xl font-bold py-1">Take Your Event to The Next Level</h2>
             </div>
             <p className="text-neutral-400 mb-4">Ciptakan pengalaman unik dan bermakna dengan menjelajahi virtual space milik Anda</p>
             <div className="text-neutral-400">
@@ -74,15 +76,16 @@ const Welcome = () => {
                 <li>Memperoleh data yang lebih relevan dengan lebih mudah</li>
               </ul>
             </div>
+            <Button variant="primary" size="large" isCustom={true} className="mt-8">Experience Live</Button>
           </div>
           <div className="w-7/12">
-            <div className="w-full h-80 bg-white text-black rounded-lg shadow-[0_0_100px_rgba(0,0,0,0.25)]">content</div>
+            <div className="w-full h-80 bg-white text-black rounded-lg shadow-black">content</div>
           </div>
         </div>
       </div>
 
       {/* Contact Us */}
-      <div className="bg-primary-800 flex flex-col justify-center items-center py-16">
+      <div id="contact" className="bg-primary-800 flex flex-col justify-center items-center py-16">
         <div className="hl"></div>
         <h2 className="text-2xl md:text-4xl font-bold">Contact Us</h2>
         <p className="mt-8">xxxx</p>
@@ -90,48 +93,7 @@ const Welcome = () => {
       </div>
 
       {/* Footer */}
-      <div className="bg-primary-900">
-        <div className="container mx-auto px-8">
-          <div className="w-full flex flex-col md:flex-row py-6">
-            <div className="flex-1 mb-6">
-              <a className="text-white no-underline hover:no-underline font-bold text-2xl lg:text-4xl" href="/">
-                CRANIUM</a>
-              <p className="mt-4 no-underline hover:no-underline text-xs">© 2022 CRANIUM INDONESIA. ALL
-                RIGHTS RESERVED</p>
-              <p className="mt-4 text-grey-500 no-underline hover:no-underline text-xs">Privacy — Terms</p>
-            </div>
-
-            <div className="flex-1">
-              <p className="uppercase md:mb-6">Contact</p>
-              <ul className="list-reset mb-6">
-                <li className="mt-2 inline-block mr-2 md:block md:mr-0">
-                  <a href="/" className="no-underline hover:underline hover:text-pink-500">Phone
-                    Number</a>
-                </li>
-                <li className="mt-2 inline-block mr-2 md:block md:mr-0">
-                  <a href="/" className="no-underline hover:underline hover:text-pink-500">Email
-                  </a>
-                </li>
-                <li className="mt-2 inline-block mr-2 md:block md:mr-0">
-                  <a href="/" className="no-underline hover:underline hover:text-pink-500">Social
-                    Media</a>
-                </li>
-              </ul>
-            </div>
-            <div className="flex-1">
-              <p className="uppercase md:mb-6">Company</p>
-              <ul className="list-reset mb-6">
-                <li className="mt-2 inline-block mr-2 md:block md:mr-0">
-                  <a href="/" className="no-underline hover:underline hover:text-pink-500">Terms</a>
-                </li>
-                <li className="mt-2 inline-block mr-2 md:block md:mr-0">
-                  <a href="/" className="no-underline hover:underline hover:text-pink-500">Privacy</a>
-                </li>
-              </ul>
-            </div>
-          </div>
-        </div>
-      </div>
+      <Footer />
     </div>
   )
 }

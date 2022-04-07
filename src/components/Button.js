@@ -3,13 +3,14 @@ import { useState, useEffect, useRef } from "react"
 /**
  * Button Component
  * @param {String} children - Contents inside the button tag
- * @param {Boolean} isCustom - Button uses clip-path (custom) or rounded corners (original): <button isCustom={true}>
- * @param {String} type - Button type: <button type="button|submit|reset"> 
- * @param {String} size - Button size: <button size="large|medium"> 
- * @param {String} variant - Button variant: <button variant="primary|secondary|tertiary"> 
+ * @param {Boolean} isCustom - Button uses clip-path (custom) or rounded corners (original): <Button isCustom={true}>
+ * @param {String} type - Button type: <Button type="button|submit|reset">
+ * @param {String} href - Button type: <Button href="www.example.com">
+ * @param {String} size - Button size: <Button size="large|medium">
+ * @param {String} variant - Button variant: <Button variant="primary|secondary|tertiary">
  * @param {String} className - Additional classes for the button
  */
-const Button = ({ children, isCustom, type, size, variant, className }) => {
+const Button = ({ children, isCustom, type, href, size, variant, className }) => {
   
   const ref = useRef()
   const [height, setHeight] = useState(0)
@@ -23,20 +24,24 @@ const Button = ({ children, isCustom, type, size, variant, className }) => {
   if (variant === 'primary' || variant === 'secondary') {
     btnClass += ` btn-${variant}`
 
+    // Size: Large
+    if (size === 'large') {
+      btnClass += ' btn-lg'
+    }
     // Size: Medium
-    if (size === 'medium') {
+    else if (size === 'medium') {
       btnClass += ' btn-md'
     }
-    // Size: Large (fallback option)
+    // Size: Fill Container (fallback option)
     else {
-      btnClass += ' btn-lg'
+      btnClass += ' btn-full'
     }
 
     // Using clip-path without rounded corners (custom)
     if (isCustom) {
       btnStyle = clipPath;
     }
-    // Using rounded corners without clip-path (original)
+    // Using rounded corners without clip-path (original) (fallback option)
     else {
       btnClass += ' rounded-md'
     }
@@ -51,15 +56,30 @@ const Button = ({ children, isCustom, type, size, variant, className }) => {
     setHeight(ref.current.offsetHeight)
   }, [height])
 
-  return (
-    <button
-      ref={ref}
-      type={type}
-      className={`${btnClass} ${className ?? '' }`}
-      style={btnStyle}>
-        {children}
-    </button>
-  )
+  // Link (href link given)
+  if (href) {
+    return (
+      <a
+        ref={ref}
+        href={href}
+        className={`${btnClass} ${className ?? '' }`}
+        style={btnStyle}>
+          {children}
+      </a>
+    )
+  }
+  // Button (fallback option)
+  else {
+    return (
+      <button
+        ref={ref}
+        type={type}
+        className={`${btnClass} ${className ?? '' }`}
+        style={btnStyle}>
+          {children}
+      </button>
+    )
+  }
 }
 
 export default Button

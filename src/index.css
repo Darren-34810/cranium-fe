@@ -5,6 +5,10 @@
 @tailwind utilities;
 
 @layer base {
+    html {
+        @apply scroll-smooth;
+    }
+
     body {
         @apply text-neutral-50;
     }
@@ -20,7 +24,9 @@
         text-sm
         font-semibold
         cursor-pointer
-        inline-block
+        flex
+        justify-center
+        items-center
         transition-all
         duration-300
         hover:-translate-y-1
@@ -92,11 +98,11 @@
     }
 
     .vl {
-        @apply h-[50px] w-0.5 border-l-2 border-secondary-500 mr-4 shadow-[0_0_8px] shadow-secondary-500;
+        @apply h-auto w-0.5 border-l-2 border-secondary-500 mr-4 shadow-[0_0_8px] shadow-secondary-500;
     }
 
     .vl-2 {
-        @apply h-[100px] w-0.5 border-l-2 border-secondary-500 mr-4 shadow-[0_0_8px] shadow-secondary-500;
+        @apply h-auto w-0.5 border-l-2 border-secondary-500 mr-4 shadow-[0_0_8px] shadow-secondary-500;
     }
 
     .hl {
@@ -105,5 +111,9 @@
 
     .hl-2 {
         @apply w-[100px] h-0.5 border-t-2 border-secondary-500 mb-4 shadow-[0_0_8px] shadow-secondary-500;
+    }
+
+    .shadow-black {
+        @apply shadow-[0_0_100px_rgba(0,0,0,0.25)];
     }
 }
