@@ -37,6 +37,8 @@ module.exports = {
       },
     },
 	},
+  // Apakah sidebar beneran memakai template orang lain ???
+
 	plugins: [
     // eslint-disable-next-line global-require
 
