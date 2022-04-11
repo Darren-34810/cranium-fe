@@ -33,7 +33,7 @@ const DataConfiguration3 = () => {
                   <tr>
                     <td className="border-2 border-white text-white text-center">Booths 1</td>
                     <td className="border-2 border-white text-white text-center">Telkom</td>
-                    <td className="border-2 border-whitet text-white text-center">
+                    <td className="border-2 border-white text-white text-center">
                         <button className="bg-green-300 hover:bg-white text-black font w-1/2 h-8 rounded-lg">
                             <a className="text-center text-xs">Input</a>
                           </button>
