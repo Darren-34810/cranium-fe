@@ -98,19 +98,15 @@
     }
 
     .vl {
-        @apply h-auto w-0.5 border-l-2 border-secondary-500 mr-4 shadow-[0_0_8px] shadow-secondary-500;
-    }
-
-    .vl-2 {
-        @apply h-auto w-0.5 border-l-2 border-secondary-500 mr-4 shadow-[0_0_8px] shadow-secondary-500;
+        @apply h-auto w-0.5 border-l-2 border-t-0 border-secondary-500 mr-4 mb-0 shadow-[0_0_8px] shadow-secondary-500;
     }
 
     .hl {
-        @apply w-[50px] h-0.5 border-t-2 border-secondary-500 mb-4 shadow-[0_0_8px] shadow-secondary-500;
+        @apply w-[50px] h-0.5 border-t-2 border-l-0 border-secondary-500 mb-4 mr-0 shadow-[0_0_8px] shadow-secondary-500;
     }
 
     .hl-2 {
-        @apply w-[100px] h-0.5 border-t-2 border-secondary-500 mb-4 shadow-[0_0_8px] shadow-secondary-500;
+        @apply w-[100px] h-0.5 border-t-2 border-l-0 border-secondary-500 mb-4 mr-0 shadow-[0_0_8px] shadow-secondary-500;
     }
 
     .shadow-black {

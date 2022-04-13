@@ -8,27 +8,17 @@ const Homepage = () => {
 
   return (
     <div>
-      <TopNavbar/>
-      <div className="bg-primary-700 h-screen w-full lg:w-full flex justify-center items-center ">
-        <div className="w-2/6 flex flex-col h-1/2 p-2">
-          <h3 className="m-2 text-3xl text-white font-bold leading-none">
-            About
-          </h3>
-          <p className="m-2 text-gray-400 py-4 ">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-            dolore magna aliqua.
-          </p>
-          <div className="m-2 py-4  md:flex md:flex-col lg:flex lg:flex-col xl:flex xl:flex-row ">
-            <a href="/" className="btn-primary mx-4 lg:my-0 md:my-2 lg:my-2">Join an event</a>
-            <a href="/" className="btn-secondary mx-4 lg:my-0 md:my-2 lg:my-2">Host an event</a>
-          </div>
-        </div>
-        <div className="w-3/6 h-5/6 sm:h-1/2 sm:w-2/2 p-2">
-          <svg className="w-full h-full">
-            <title>Image</title>
-            <rect width="100%" display="block" height="100%" rx="15" fill="#f2f2f2"/>
-          </svg>
-        </div>
+      {/* Header */}
+      <TopNavbar />
+
+      {/* Hero */}
+      <div className="bg-primary-900 h-screen sm:h-screen flex flex-col justify-center items-center">
+        <h1 className="text-3xl sm:text-4xl md:text-6xl font-bold my-6 max-w-screen-md text-center">
+          At eripuit signiferumque sea, vel ad mucius eiusmod
+        </h1>
+        <p className="text-base md:text-lg text-neutral-400 max-w-screen-md text-center">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit
+        </p>
       </div>
 
 
@@ -87,7 +77,7 @@ const Homepage = () => {
           <div className="w-3/6 h-5/6 sm:h-1/2 sm:w-2/2 p-2">
             <svg className="w-full h-full">
               <title>Image</title>
-              <rect width="100%" display="block" height="100%" rx="15" fill="white"/>
+              <rect width="100%" display="block" height="100%" rx="15" fill="white" />
             </svg>
           </div>
         </div>
@@ -131,7 +121,7 @@ const Homepage = () => {
           <div className="w-full flex flex-col md:flex-row py-6">
             <div className="flex-1 m-8 text-gray-400">
               <a className="text-white no-underline hover:no-underline font-bold text-2xl lg:text-4xl"
-                           href="/">
+                href="/">
                 CRANIUM
               </a>
               <p className="mt-4 text-gray-400 no-underline hover:no-underline text-xs">© 2022 CRANIUM INDONESIA. ALL
@@ -145,20 +135,20 @@ const Homepage = () => {
               <ul className="list-reset mb-6">
                 <li className="mt-2 inline-block mr-2 md:block md:mr-0">
                   <a href="/"
-                               className="no-underline hover:underline text-gray-400 hover:text-pink-500">
+                    className="no-underline hover:underline text-gray-400 hover:text-pink-500">
                     Phone
                     Number
                   </a>
                 </li>
                 <li className="mt-2 inline-block mr-2 md:block md:mr-0">
                   <a href="/"
-                               className="no-underline hover:underline text-gray-400 hover:text-pink-500">
+                    className="no-underline hover:underline text-gray-400 hover:text-pink-500">
                     Email
                   </a>
                 </li>
                 <li className="mt-2 inline-block mr-2 md:block md:mr-0">
                   <a href="/"
-                               className="no-underline hover:underline text-gray-400 hover:text-pink-500">
+                    className="no-underline hover:underline text-gray-400 hover:text-pink-500">
                     Social
                     Media
                   </a>
@@ -173,7 +163,7 @@ const Homepage = () => {
                 </li>
                 <li className="mt-2 inline-block mr-2 md:block md:mr-0">
                   <a href="/"
-                     className="no-underline hover:underline text-gray-400 hover:text-pink-500">Privacy</a>
+                    className="no-underline hover:underline text-gray-400 hover:text-pink-500">Privacy</a>
                 </li>
               </ul>
             </div>
