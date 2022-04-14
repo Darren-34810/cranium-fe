@@ -21,6 +21,7 @@ import Billing from "./pages/HomeDashboard/Billing";
 import Tier from "./pages/EventDashboard/Tier";
 import Recording from "./pages/EventDashboard/Recording";
 import AttendanceForm from "./pages/EventDashboard/AttendanceForm";
+import Media from "./pages/AdminDashboard/Media";
 
 function App() {
   return (
@@ -47,6 +48,7 @@ function App() {
         <Route exact path={'/tier'} component={Tier}/>
         <Route exact path={'/attendance'} component={AttendanceForm}/>
         <Route exact path={'/recording'} component={Recording}/>
+        <Route exact path={'/media'} component={Media}/>
 
         {/*<Route exact path="/event" component={EventPage} />*/}
         {/*<Route exact path="/eventlanding" component={EventLandingPage} />*/}
