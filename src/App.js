@@ -22,6 +22,10 @@ import Tier from "./pages/EventDashboard/Tier";
 import Recording from "./pages/EventDashboard/Recording";
 import AttendanceForm from "./pages/EventDashboard/AttendanceForm";
 import Media from "./pages/AdminDashboard/Media";
+import AddUsers from "./pages/AdminDashboard/AddUsers";
+import UserList from "./pages/AdminDashboard/UserList";
+import UserGroups from "./pages/AdminDashboard/UserGroups";
+import UserProfile from "./pages/AdminDashboard/UserProfile";
 
 function App() {
   return (
@@ -49,6 +53,10 @@ function App() {
         <Route exact path={'/attendance'} component={AttendanceForm}/>
         <Route exact path={'/recording'} component={Recording}/>
         <Route exact path={'/media'} component={Media}/>
+        <Route exact path={'/add-users'} component={AddUsers}/>
+        <Route exact path={'/user-list'} component={UserList}/>
+        <Route exact path={'/user-groups'} component={UserGroups}/>
+        <Route exact path={'/user-profile'} component={UserProfile}/>
 
         {/*<Route exact path="/event" component={EventPage} />*/}
         {/*<Route exact path="/eventlanding" component={EventLandingPage} />*/}
