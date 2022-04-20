@@ -7,14 +7,14 @@ const SignUp = () => {
       <div className="min-h-screen bg-from-600-to-500 flex justify-center items-center text-neutral-50 transition-all">
         <div className="max-w-4xl flex flex-col md:flex-row justify-evenly items-center py-16 md:py-0">
           <div className="w-[85%] md:w-2/5 mb-16 md:mb-0 flex flex-col justify-center">
-            <p className="mb-6 text-2xl">Sign up to Cranium</p>
-            <p className="mb-4">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Atque adipisci necessitatibus voluptatem accusamus vero deleniti hic dignissimos illum nam.</p>
+            <p className="w-full mb-6 text-3xl font-bold">Sign up to Cranium</p>
+            <p className="mb-4">Ciptakan pengalaman unik dan bermakna dengan menjelajahi virtual space milik Anda</p>
             <div>
-              <p>Get access to:</p>
+              <p>Mengapa menggunakan virtual reality?</p>
               <ul className="list-disc ml-5">
-                <li>Feature 1</li>
-                <li>Feature 2</li>
-                <li>Feature 3</li>
+                <li>Membuat acara hybrid yang variatif</li>
+                <li>Meningkatkan konversi dalam acara untuk mendukung tujuan bisnis/event</li>
+                <li>Memperoleh data yang lebih relevan dengan lebih mudah</li>
               </ul>
             </div>
           </div>
