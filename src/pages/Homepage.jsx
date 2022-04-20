@@ -67,12 +67,12 @@ const Homepage = () => {
             <h2 className="text-2xl lg:text-4xl font-bold py-1">Features</h2>
           </div>
           <div className="order-3 lg:col-span-3 lg:row-start-2 text-neutral-400">
-            <p className="mb-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus iure eos nemo, autem aperiam sapiente possimus perferendis praesentium accusamus delectus, quae est quod commodi ab officia inventore reiciendis fuga pariatur.</p>
+            <p className="mb-4">Ciptakan pengalaman unik dan bermakna dengan menjelajahi virtual space milik Anda</p>
             <div>
               <ul className="list-disc ml-4">
-                <li>Feature 1</li>
-                <li>Feature 2</li>
-                <li>Feature 3</li>
+              <li>Membuat acara hybrid yang variatif</li>
+                <li>Meningkatkan konversi dalam acara untuk mendukung tujuan bisnis/event</li>
+                <li>Memperoleh data yang lebih relevan dengan lebih mudah</li>
               </ul>
             </div>
             <Button variant="secondary" size="large" isCustom={true} className="mt-8">Contact us</Button>
