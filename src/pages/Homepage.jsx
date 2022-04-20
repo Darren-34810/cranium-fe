@@ -2,6 +2,7 @@ import TopNavbar from "../components/TopNavbar";
 import Image from "../components/Image";
 import PlanCard from "../components/PlanCard";
 import EventCard from "../components/EventCard";
+import Button from "../components/Button";
 
 
 const Homepage = () => {
@@ -110,7 +111,7 @@ const Homepage = () => {
         </h6>
         <div className="flex justify-center items-center">
           <a href="/" className="btn-primary mr-4">Host an event</a>
-          <a href="/" className="btn-secondary">Contact us</a>
+          <Button variant="primary" size="large" isCustom={true} href="https://wa.me/+628179101889" className="mt-8">Contact Us</Button>
         </div>
       </div>
 
