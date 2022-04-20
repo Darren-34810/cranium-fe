@@ -1,7 +1,7 @@
 import Button from "./Button";
 import Image from "./Image";
 
-const PlanCard = ({variant, className}) => {
+const PlanCard = ({ variant, className }) => {
   if (variant === "best-seller") {
     return (
       <div className={`h-[26rem] flex flex-col justify-between items-center text-center bg-neutral-700 border border-neutral-400 rounded-lg shadow px-14 py-12 relative ${className ?? ''}`}>
@@ -18,7 +18,7 @@ const PlanCard = ({variant, className}) => {
           <p className="mb-2">Feature 2</p>
           <p>Feature 3</p>
         </div>
-        <Button variant="primary">Order now</Button>
+        <Button variant="primary" size="medium" isCustom={true} className="mt-8">Order Now</Button>
       </div>
     )
   }
@@ -35,7 +35,7 @@ const PlanCard = ({variant, className}) => {
           <p className="mb-2">Feature 2</p>
           <p>Feature 3</p>
         </div>
-        <Button variant="secondary">Order now</Button>
+        <Button variant="secondary" size="medium" isCustom={true} className="mt-8">Order Now</Button>
       </div>
     )
   }

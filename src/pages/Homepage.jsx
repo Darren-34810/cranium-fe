@@ -1,8 +1,8 @@
 import TopNavbar from "../components/TopNavbar";
-import Image from "../components/Image";
 import PlanCard from "../components/PlanCard";
 import EventCard from "../components/EventCard";
 import Button from "../components/Button";
+import Footer from "../components/Footer";
 
 
 const Homepage = () => {
@@ -13,17 +13,19 @@ const Homepage = () => {
       <TopNavbar />
 
       {/* Hero */}
-      <div className="bg-primary-900 h-screen sm:h-screen flex flex-col justify-center items-center">
-        <h1 className="text-3xl sm:text-4xl md:text-6xl font-bold my-6 max-w-screen-md text-center">
+      <div id="hero" className="bg-blend-multiply bg-primary-500/75 bg-[url(../public/images/jpeg/hero-event.jpg)] bg-cover bg-center">
+        <div className="flex flex-col justify-center items-center py-36 mx-auto">
+          <h1 className="text-2xl sm:text-4xl lg:text-6xl font-bold my-6 max-w-[90%] sm:max-w-screen-sm lg:max-w-screen-md text-center">
           At eripuit signiferumque sea, vel ad mucius eiusmod
-        </h1>
-        <p className="text-base md:text-lg text-neutral-400 max-w-screen-md text-center">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit
-        </p>
+          </h1>
+          <p className="text-xs sm:text-base lg:text-lg text-neutral-400 max-w-[90%] sm:max-w-[80%] lg:max-w-screen-[70%] text-center">
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Est dicta commodi mollitia velit iure molestiae quisquam ipsam fugiat esse, consectetur adipisci non aut perferendis eum earum voluptatum, id officiis recusandae.
+          </p>
+        </div>
       </div>
 
 
-      <div className="bg-gradient-to-b from-primary-700 via-primary-500 to-primary-700">
+      <div className="bg-primary-700">
         <h2 className="text-center text-2xl font-bold py-6 text-white">Our Clients</h2>
         <div className="flex justify-center">
           <div className="rounded-full lg:h-28 lg:w-28 md:h-14 md:w-14 bg-gray-500 m-8"></div>
@@ -36,7 +38,7 @@ const Homepage = () => {
       </div>
 
 
-      <div className="bg-primary-700 p-8">
+      <div className="bg-primary-800 p-8">
         <div className="">
           <h1 className="py-4 text-2xl font-bold text-white text-center">Events</h1>
           <p className="py-6 mb-4 text-gray-400 text-center">Lorem ipsum dolor sit amet, consectetur adipiscing elit,
@@ -57,36 +59,37 @@ const Homepage = () => {
 
 
 
-      <div className="bg-gradient-to-b from-primary-700 via-primary-500 to-primary-700 min-h-screen">
-        <div className="h-screen flex flex-wrap justify-center items-center">
-          <div className="w-2/6 p-6 items-center">
-            <h3 className="m-2 text-3xl text-white font-bold leading-none mb-3">
-              Features
-            </h3>
-            <p className="m-2 text-gray-400">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
-              et
-              dolore magna aliqua.
-            </p>
-            <div className="pb-8 pt-2 ml-5 text-gray-400">
-              <li>Feature 1</li>
-              <li>Feature 2</li>
-              <li>Feature 3</li>
-            </div>
-            <a href="/" className=" btn-primary mt-8">Learn More</a>
+      <div id="live" className="bg-primary-700">
+        <div className="max-w-screen-2xl max-h-fit grid lg:grid-cols-10 lg:justify-items-stretch lg:items-center p-10 sm:px-20 sm:py-16 mx-auto">
+
+          <div className="order-1 lg:col-span-3 flex items-stretch mb-3">
+            <div className="vl"></div>
+            <h2 className="text-2xl lg:text-4xl font-bold py-1">Features</h2>
           </div>
-          <div className="w-3/6 h-5/6 sm:h-1/2 sm:w-2/2 p-2">
-            <svg className="w-full h-full">
-              <title>Image</title>
-              <rect width="100%" display="block" height="100%" rx="15" fill="white" />
-            </svg>
+          <div className="order-3 lg:col-span-3 lg:row-start-2 text-neutral-400">
+            <p className="mb-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus iure eos nemo, autem aperiam sapiente possimus perferendis praesentium accusamus delectus, quae est quod commodi ab officia inventore reiciendis fuga pariatur.</p>
+            <div>
+              <ul className="list-disc ml-4">
+                <li>Feature 1</li>
+                <li>Feature 2</li>
+                <li>Feature 3</li>
+              </ul>
+            </div>
+            <Button variant="secondary" size="large" isCustom={true} className="mt-8">Contact us</Button>
+          </div>
+          <div className="order-2 lg:col-start-5 lg:col-span-6 lg:row-span-2 my-5">
+            <img
+              src="images/jpeg/experience-live.jpg"
+              alt="Next Level Event Experience"
+              className="object-cover object-center w-full h-52 sm:h-80 bg-white text-black rounded-lg shadow-black"
+            />
           </div>
         </div>
       </div>
 
 
 
-      <div className="bg-primary-700 pb-16">
+      <div className="bg-primary-800 pb-16">
         <div className="h-auto">
           <h1 className="py-4 text-2xl font-bold text-white text-center">Account Plans</h1>
           <p className="py-6 mb-4 text-gray-400 text-center">Lorem ipsum dolor sit amet, consectetur adipiscing elit,
@@ -102,75 +105,40 @@ const Homepage = () => {
 
 
 
-      <div className="bg-gray-100 h-screen flex flex-col justify-center items-center">
-        <h1 className="text-4xl md:text-6xl font-black mb-4 max-w-screen-lg text-center">
-          Ready to create an event?
-        </h1>
-        <h6 className="text-xl md:text-2xl text-gray-400 mb-8 max-w-screen-md text-center">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-        </h6>
-        <div className="flex justify-center items-center">
-          <a href="/" className="btn-primary mr-4">Host an event</a>
-          <Button variant="primary" size="large" isCustom={true} href="https://wa.me/+628179101889" className="mt-8">Contact Us</Button>
-        </div>
-      </div>
+      <div id="live" className="bg-primary-700">
+        <div className="max-w-screen-2xl max-h-fit grid lg:grid-cols-10 lg:justify-items-stretch lg:items-center p-10 sm:px-20 sm:py-16 mx-auto">
 
-
-
-      <div className="bg-primary-700">
-        <div className="container">
-          <div className="w-full flex flex-col md:flex-row py-6">
-            <div className="flex-1 m-8 text-gray-400">
-              <a className="text-white no-underline hover:no-underline font-bold text-2xl lg:text-4xl"
-                href="/">
-                CRANIUM
-              </a>
-              <p className="mt-4 text-gray-400 no-underline hover:no-underline text-xs">© 2022 CRANIUM INDONESIA. ALL
-                RIGHTS RESERVED</p>
-              <p className="mt-4 text-grey-400 no-underline hover:no-underline text-xs">Privacy — Terms</p>
+          <div className="order-1 lg:col-span-3 flex items-stretch mb-3">
+            <div className="vl"></div>
+            <h2 className="text-2xl lg:text-4xl font-bold py-1">Ready to Create an Event?</h2>
+          </div>
+          <div className="order-3 lg:col-span-3 lg:row-start-2 text-neutral-400">
+            <p className="mb-4">Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
+            <div>
             </div>
-
-
-            <div className="flex-1">
-              <p className="uppercase text-gray-400 md:mb-6">Contact</p>
-              <ul className="list-reset mb-6">
-                <li className="mt-2 inline-block mr-2 md:block md:mr-0">
-                  <a href="/"
-                    className="no-underline hover:underline text-gray-400 hover:text-pink-500">
-                    Phone
-                    Number
-                  </a>
-                </li>
-                <li className="mt-2 inline-block mr-2 md:block md:mr-0">
-                  <a href="/"
-                    className="no-underline hover:underline text-gray-400 hover:text-pink-500">
-                    Email
-                  </a>
-                </li>
-                <li className="mt-2 inline-block mr-2 md:block md:mr-0">
-                  <a href="/"
-                    className="no-underline hover:underline text-gray-400 hover:text-pink-500">
-                    Social
-                    Media
-                  </a>
-                </li>
-              </ul>
+            <div className="flex flex-row">
+            <div className="mx-auto">
+            <Button variant="primary" size="large" isCustom={true} className="mt-8">Host an Event</Button>
             </div>
-            <div className="flex-1">
-              <p className="uppercase text-gray-400 md:mb-6">Company</p>
-              <ul className="list-reset mb-6">
-                <li className="mt-2 inline-block mr-2 md:block md:mr-0">
-                  <a href="/" className="no-underline hover:underline text-gray-400 hover:text-pink-500">Terms</a>
-                </li>
-                <li className="mt-2 inline-block mr-2 md:block md:mr-0">
-                  <a href="/"
-                    className="no-underline hover:underline text-gray-400 hover:text-pink-500">Privacy</a>
-                </li>
-              </ul>
+            <div className="mx-auto">
+            <Button variant="secondary" size="large" isCustom={true} className="mt-8">Contact Us</Button>
             </div>
+            </div>
+          </div>
+          <div className="order-2 lg:col-start-5 lg:col-span-6 lg:row-span-2 my-5">
+            <img
+              src="images/jpeg/seamless-event.jpg"
+              alt="Next Level Event Experience"
+              className="object-cover object-center w-full h-full sm:h-80 bg-white text-black rounded-lg shadow-black"
+            />
           </div>
         </div>
       </div>
+
+
+
+      {/* Footer */}
+      <Footer />
     </div>
   )
 }

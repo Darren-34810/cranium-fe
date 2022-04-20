@@ -123,4 +123,13 @@
     .shadow-black {
         @apply shadow-[0_0_100px_rgba(0,0,0,0.25)];
     }
+
+    .imgCard {
+     width : 100%;
+     overflow : hidden;
+    }
+
+    .imgCard img{
+   width : 50%;
+   }
 }
