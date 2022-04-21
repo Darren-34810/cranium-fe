@@ -1,4 +1,4 @@
-import TopNavbar from "../components/TopNavbar";
+import TopNavbarHome from "../components/TopNavbarHome";
 import PlanCard from "../components/PlanCard";
 import EventCard from "../components/EventCard";
 import Button from "../components/Button";
@@ -10,7 +10,7 @@ const Homepage = () => {
   return (
     <div>
       {/* Header */}
-      <TopNavbar />
+      <TopNavbarHome/>
 
       {/* Hero */}
       <div id="hero" className="bg-blend-multiply bg-primary-500/75 bg-[url(../public/images/jpeg/hero-event.jpg)] bg-cover bg-center">
@@ -21,6 +21,14 @@ const Homepage = () => {
           <p className="text-xs sm:text-base lg:text-lg text-neutral-400 max-w-[90%] sm:max-w-[80%] lg:max-w-screen-[70%] text-center">
             Lorem ipsum dolor, sit amet consectetur adipisicing elit. Est dicta commodi mollitia velit iure molestiae quisquam ipsam fugiat esse, consectetur adipisci non aut perferendis eum earum voluptatum, id officiis recusandae.
           </p>
+          <div className="flex flex-row">
+            <div className="mx-4">
+            <Button variant="primary" size="large" isCustom={true} className="mt-8">Attend an Event</Button>
+            </div>
+            <div className="mx-4">
+            <Button variant="secondary" size="large" isCustom={true} className="mt-8">Host an Event</Button>
+            </div>
+            </div>
         </div>
       </div>
 
@@ -39,7 +47,7 @@ const Homepage = () => {
 
 
       <div className="bg-primary-800 p-8">
-        <div className="">
+        <div id="events">
           <h1 className="py-4 text-2xl font-bold text-white text-center">Events</h1>
           <p className="py-6 mb-4 text-gray-400 text-center">Lorem ipsum dolor sit amet, consectetur adipiscing elit,
             sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
@@ -59,7 +67,7 @@ const Homepage = () => {
 
 
 
-      <div id="live" className="bg-primary-700">
+      <div id="features" className="bg-primary-700">
         <div className="max-w-screen-2xl max-h-fit grid lg:grid-cols-10 lg:justify-items-stretch lg:items-center p-10 sm:px-20 sm:py-16 mx-auto">
 
           <div className="order-1 lg:col-span-3 flex items-stretch mb-3">
@@ -89,7 +97,7 @@ const Homepage = () => {
 
 
 
-      <div className="bg-primary-800 pb-16">
+      <div id="plans" className="bg-primary-800 pb-16">
         <div className="h-auto">
           <h1 className="py-4 text-2xl font-bold text-white text-center">Account Plans</h1>
           <p className="py-6 mb-4 text-gray-400 text-center">Lorem ipsum dolor sit amet, consectetur adipiscing elit,
@@ -105,7 +113,7 @@ const Homepage = () => {
 
 
 
-      <div id="live" className="bg-primary-700">
+      <div className="bg-primary-700">
         <div className="max-w-screen-2xl max-h-fit grid lg:grid-cols-10 lg:justify-items-stretch lg:items-center p-10 sm:px-20 sm:py-16 mx-auto">
 
           <div className="order-1 lg:col-span-3 flex items-stretch mb-3">
