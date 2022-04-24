@@ -1,4 +1,5 @@
 import { useState, useEffect, useRef } from "react"
+import { Link } from "react-router-dom"
 
 /**
  * Button Component
@@ -59,13 +60,13 @@ const Button = ({ children, isCustom, type, href, size, variant, className }) =>
   // Link (href link given)
   if (href) {
     return (
-      <a
+      <Link
         ref={ref}
-        href={href}
+        to={href}
         className={`${btnClass} ${className ?? ''}`}
         style={btnStyle}>
         {children}
-      </a>
+      </Link>
     )
   }
   // Button (fallback option)
