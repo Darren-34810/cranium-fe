@@ -1,8 +1,8 @@
 import Button from "../components/Button"
 import Input from "../components/Input"
-import {useState} from "react";
+import { useState } from "react";
 import axios from "axios";
-import {useHistory} from "react-router-dom";
+import { useHistory } from "react-router-dom";
 
 const SignUp = () => {
   // const [firstName, setFirstName] = useState('')
@@ -55,8 +55,8 @@ const SignUp = () => {
           </div>
           <div className="w-full md:w-2/5 flex justify-center">
             <form action="/signup" method="POST"
-                  className="w-80 text-sm text-center bg-neutral-800 border border-neutral-400 rounded-lg shadow-lg p-6"
-                  onSubmit={SignUpForm}
+              className="w-80 text-sm text-center bg-neutral-800 border border-neutral-400 rounded-lg shadow-lg p-6"
+              onSubmit={SignUpForm}
             >
               <p className="has-text-centered">{msg}</p>
               {/*<Input type="text" placeholder="First Name" className="mb-4" value={firstName} onChange={(e) => {*/}
@@ -66,35 +66,38 @@ const SignUp = () => {
               {/*       value={lastName} onChange={(e) => {*/}
               {/*  setLastName(e.target.value)*/}
               {/*}}/>*/}
-              <Input type="text" placeholder="Name" className="mb-4"
-                     value={name} onChange={(e) => {
 
-              }}/>
+              {/* <Input type="text" placeholder="Name" className="mb-4" */}
+              {/* value={name} onChange={(e) => {setName(e.target.value)}} /> */}
+
+              <Input
+                type="text"
+                placeholder="Name"
+                className="mb-4"
+                value={name}
+                inputHandler={(valueCallback) => setName(valueCallback)}
+              />
+
               {/*<Input type="text" placeholder="Phone Number" className="mb-4"*/}
               {/*       value={number} onChange={(e) => {*/}
               {/*  setNumber(e.target.value)*/}
               {/*}}/>*/}
               <Input type="email" placeholder="Email" className="mb-4"
-                     value={email} onChange={(e) => {
-                setEmail(e.target.value)
-              }}/>
+                value={email} inputHandler={(valueCallback) => setEmail(valueCallback)} />
 
               <Input type="password" placeholder="Password" className="mb-4"
-                     value={password} onChange={(e) => {
-                setPassword(e.target.value)
-              }}/>
+                value={password} inputHandler={(valueCallback) => setPassword(valueCallback)} />
               <Input type="password" placeholder=" Confirm Password" className="mb-4"
-                     value={confPassword} onChange={(e) => {
-                setConfPassword(e.target.value)
-              }}/>
+                value={confPassword} inputHandler={(valueCallback) => setConfPassword(valueCallback)} />
 
               <Button size="large" type="submit" variant="primary" className="w-full mb-4">Sign Up</Button>
-              <hr className="border-neutral-400 mb-4"/>
+              <hr className="border-neutral-400 mb-4" />
+
               <Button size="large" type="button" variant="primary"
-                      className="w-full mb-4 bg-neutral-50 border-neutral-50 hover:bg-neutral-300 hover:border-neutral-300 hover:shadow-neutral-600"><img
-                className="w-10 mr-4" src="./images/jpeg/logogoogle.png"/>Sign in with Google</Button>
+                className="w-full mb-4 bg-neutral-50 border-neutral-50 hover:bg-neutral-300 hover:border-neutral-300 hover:shadow-neutral-600"><img
+                  className="w-10 mr-4" src="./images/jpeg/logogoogle.png" />Sign in with Google</Button>
               <p className="text-xs -mb-1">Already have an account? <Button href="/signin" variant="tertiary"
-                                                                            className="inline text-xs">Sign in</Button>
+                className="inline text-xs">Sign in</Button>
               </p>
             </form>
           </div>

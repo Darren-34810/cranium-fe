@@ -1,12 +1,19 @@
 const Input = (props) => {
   const style = 'bg-neutral-700 border border-neutral-400 focus:outline focus:outline-neutral-400 rounded text-sm px-5 py-3 w-full transition-all'
+
+  const inputChangeHandler = (e) => {
+    console.log('Input Handler : ' + props.placeholder)
+    console.log(e.target.value);
+    props.inputHandler(e.target.value);
+  }
+
   if (props.type === "file") {
     return (
       <>
-      <label for="file-upload" className="btn-secondary">
+        <label for="file-upload" className="btn-secondary">
           Choose File
-      </label>
-      <input id="file-upload" type="file" className="hidden"/>
+        </label>
+        <input id="file-upload" type="file" className="hidden" />
       </>
     )
   }
@@ -14,7 +21,14 @@ const Input = (props) => {
     return <textarea placeholder={props.placeholder} className={`${style} ${props.className ?? ''}`}></textarea>
   }
   else {
-    return <input type={props.type} placeholder={props.placeholder} className={`${style} ${props.className ?? ''}`} />
+    return (
+      <input
+        onBlur={inputChangeHandler}
+        type={props.type}
+        placeholder={props.placeholder}
+        className={`${style} ${props.className ?? ''}`}
+      />
+    )
   }
 }
 
