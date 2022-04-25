@@ -23,12 +23,12 @@ const Homepage = () => {
           </p>
           <div className="flex flex-row">
             <div className="mx-4">
-            <Button variant="primary" size="large" isCustom={true} className="mt-8">Attend an Event</Button>
+              <Button variant="primary" size="large" isCustom={true} className="mt-8">Attend an Event</Button>
             </div>
             <div className="mx-4">
-            <Button variant="secondary" size="large" isCustom={true} className="mt-8">Host an Event</Button>
+              <Button variant="secondary" size="large" isCustom={true} className="mt-8">Host an Event</Button>
             </div>
-            </div>
+          </div>
         </div>
       </div>
 
