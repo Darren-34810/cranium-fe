@@ -27,6 +27,7 @@ import UserList from "./pages/AdminDashboard/UserList";
 import UserGroups from "./pages/AdminDashboard/UserGroups";
 import UserProfile from "./pages/AdminDashboard/UserProfile";
 import MediaInput from "./pages/AdminDashboard/MediaInput";
+import HomepageFirst from "./pages/HomepageFirst";
 
 function App() {
   return (
@@ -36,6 +37,7 @@ function App() {
         <Route exact path="/welcome" component={Welcome}/>
         <Route exact path={'/dashboard'} component={Dashboard}/>
         <Route exact path={'/homepage'} component={Homepage}/>
+        <Route exact path={'/homepagefirst'} component={Homepage}/>
         <Route exact path={'/event-landing-page'} component={EventLandingPage}/>
         <Route exact path={'/testcard'} component={TestCard}/>
         <Route exact path={'/profile'} component={Profile}/>
