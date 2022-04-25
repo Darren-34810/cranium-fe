@@ -15,7 +15,7 @@ const EventCard = () => {
           </div>
           <a className="font-semibold text-lg">90's Tech</a>
           <br/>
-          <a classname="text-sm">Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus iure eos nemo, autem aperiam sapiente possimus perferendis praesentium accusamus.</a>
+          <a className="text-sm">Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus iure eos nemo, autem aperiam sapiente possimus perferendis praesentium accusamus.</a>
         </div>
         </div>
         <Button className="pt-12 text-center text-emerald-900">See more {'>'}</Button>
