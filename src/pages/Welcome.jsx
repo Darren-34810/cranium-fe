@@ -1,4 +1,5 @@
 import Button from "../components/Button";
+import CarouselWithImage from "../components/CarouselWithImage";
 import Footer from "../components/Footer";
 import TopNavbar from "../components/TopNavbar";
 
@@ -90,12 +91,8 @@ const Welcome = () => {
             </div>
             <Button variant="primary" size="large" isCustom={true} className="mt-8">Experience Live</Button>
           </div>
-          <div className="order-2 lg:col-start-5 lg:col-span-6 lg:row-span-2 my-5">
-            <img
-              src="images/jpeg/experience-live.jpg"
-              alt="Next Level Event Experience"
-              className="object-cover object-center w-full h-52 sm:h-80 bg-white text-black rounded-lg shadow-black"
-            />
+          <div className="relative flex justify-center items-center order-2 lg:col-start-5 lg:col-span-6 lg:row-span-2 my-5">
+            <CarouselWithImage />
           </div>
         </div>
       </div>

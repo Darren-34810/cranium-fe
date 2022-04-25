@@ -85,8 +85,7 @@ const LandingPage = () => {
         </div>
       </div>
     </div>
-    {/* <!-- Footer  -->
- */}
+    {/* <!-- Footer  --> */}
     <div class="bg-primary-700">
       <div class="container mx-auto px-8">
         <div class="w-full flex flex-col md:flex-row py-6">

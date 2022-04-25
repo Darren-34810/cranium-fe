@@ -1,4 +1,5 @@
 import { useState, useEffect, useRef } from "react"
+import { Link } from "react-router-dom"
 
 /**
  * Button Component
@@ -14,10 +15,8 @@ const Button = ({ children, isCustom, type, href, size, variant, className }) =>
 
   const ref = useRef()
   const [height, setHeight] = useState(0)
-  const clipPath = { clipPath: `polygon(${height / 3}px 0, 100% 0, 100% calc(100% - ${height / 3}px), calc(100% - ${height / 3}px) 100%, 0 100%, 0 ${height / 3}px)` }
 
   let btnClass = 'btn';
-  let btnStyle = {};
 
   // Button styles in ./src/index.css
   // Variant: Primary or Secondary
@@ -39,7 +38,7 @@ const Button = ({ children, isCustom, type, href, size, variant, className }) =>
 
     // Using clip-path without rounded corners (custom)
     if (isCustom) {
-      btnStyle = clipPath;
+      btnClass += ' btn-custom';
     }
     // Using rounded corners without clip-path (original) (fallback option)
     else {
@@ -59,13 +58,12 @@ const Button = ({ children, isCustom, type, href, size, variant, className }) =>
   // Link (href link given)
   if (href) {
     return (
-      <a
+      <Link
         ref={ref}
-        href={href}
-        className={`${btnClass} ${className ?? ''}`}
-        style={btnStyle}>
+        to={href}
+        className={`${btnClass} ${className ?? ''}`}>
         {children}
-      </a>
+      </Link>
     )
   }
   // Button (fallback option)
@@ -74,8 +72,7 @@ const Button = ({ children, isCustom, type, href, size, variant, className }) =>
       <button
         ref={ref}
         type={type}
-        className={`${btnClass} ${className ?? ''}`}
-        style={btnStyle}>
+        className={`${btnClass} ${className ?? ''}`}>
         {children}
       </button>
     )

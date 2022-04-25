@@ -40,7 +40,7 @@ const TopNavbarHome = () => {
                             <a href="#plans" className="inline-block py-2 sm:py-0 text-base md:text-lg text-white no-underline hover:text-secondary-500 transition">Account Plans</a>
                         </li>
                     </ul>
-                    <Button variant="secondary" size="large" isCustom={true} className="mx-4">Sign In</Button>
+                    <Button variant="secondary" size="large" isCustom={true} href="/signin" className="mx-4">Sign In</Button>
                 </div>
             </div>
         </nav>

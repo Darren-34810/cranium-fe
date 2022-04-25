@@ -28,7 +28,7 @@ const SignUp = () => {
               <Button size="large" type="submit" variant="primary" className="w-full mb-4">Sign Up</Button>
               <hr className="border-neutral-400 mb-4" />
               <Button size="large" type="button" variant="primary" className="w-full mb-4 bg-neutral-50 border-neutral-50 hover:bg-neutral-300 hover:border-neutral-300 hover:shadow-neutral-600"><img className="w-10 mr-4" src="./images/jpeg/logogoogle.png"/>Sign in with Google</Button>
-              <p className="text-xs -mb-1">Already have an account? <a href="/signin" className="btn-tertiary text-xs hover:-translate-y-0.5">Sign in</a></p>
+              <p className="text-xs -mb-1">Already have an account? <Button href="/signin" variant="tertiary" className="inline text-xs">Sign in</Button></p>
             </form>
           </div>
         </div>
