@@ -1,4 +1,5 @@
 import { createRef } from "react";
+import { Link } from "react-router-dom";
 
 const TopNavbar = () => {
   const navContentRef = createRef();
@@ -10,9 +11,9 @@ const TopNavbar = () => {
   return (
     <nav className="bg-primary-500">
       <div className="max-w-screen-2xl flex items-center justify-between flex-wrap px-8 sm:px-10 py-4 sm:py-5 mx-auto z-10 top-0">
-        <a href="/" className="text-xl sm:text-2xl font-bold text-white">
+        <Link href="/" className="text-xl sm:text-2xl font-bold text-neutral-50">
           TEMU
-        </a>
+        </Link>
 
         <div className="block sm:hidden">
           <button onClick={navToggle}
@@ -30,13 +31,13 @@ const TopNavbar = () => {
           ref={navContentRef}>
           <ul className="sm:flex justify-end flex-1 items-center">
             <li className="ml-0 sm:ml-6 font-semibold">
-              <a href="#services" className="inline-block py-2 sm:py-0 text-base md:text-lg text-white no-underline hover:text-secondary-500 transition">Services</a>
+              <a href="#services" className="inline-block py-2 sm:py-0 text-base md:text-lg text-neutral-50 no-underline hover:text-secondary-500 transition">Services</a>
             </li>
             <li className="ml-0 sm:ml-6 font-semibold">
-              <a href="#live" className="inline-block py-2 sm:py-0 text-base md:text-lg text-white no-underline hover:text-secondary-500 transition">Experience Live</a>
+              <a href="#live" className="inline-block py-2 sm:py-0 text-base md:text-lg text-neutral-50 no-underline hover:text-secondary-500 transition">Experience Live</a>
             </li>
             <li className="ml-0 sm:ml-6 font-semibold">
-              <a href="#contact" className="inline-block py-2 sm:py-0 text-base md:text-lg text-white no-underline hover:text-secondary-500 transition">Contact Us</a>
+              <a href="#contact" className="inline-block py-2 sm:py-0 text-base md:text-lg text-neutral-50 no-underline hover:text-secondary-500 transition">Contact Us</a>
             </li>
           </ul>
         </div>
