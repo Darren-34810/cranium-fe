@@ -11,7 +11,14 @@ import { Link } from "react-router-dom"
  * @param {String} variant - Button variant: <Button variant="primary|secondary|tertiary">
  * @param {String} className - Additional classes for the button
  */
-const Button = ({ children, isCustom, type, href, size, variant, className }) => {
+const Button = ({ children, isCustom, type, href, size, variant, className,props }) => {
+
+
+  // const onClickHandler = (e) => {
+  //
+  //   clickHandler(e.);
+  // }
+
 
   const ref = useRef()
   const [height, setHeight] = useState(0)
