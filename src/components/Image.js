@@ -1,4 +1,4 @@
-const Image = ({children, variant, className}) => {
+const Image = ({ children, variant, className }) => {
   const large = "rounded-full h-28 w-28 bg-black"
   const medium = "rounded-full h-24 w-24 bg-black"
   const small = "rounded-full h-14 w-14 bg-black"

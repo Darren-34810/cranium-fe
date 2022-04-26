@@ -1,15 +1,21 @@
+/**
+ * Input Component
+ * @param {String} placeholder - Short description of the input field
+ * @param {String} type - Button type: <Button type="file|textarea">
+ * @param {String} className - Additional classes for the input field
+ * @param {Function} inputHandler - Function to handle input, setting the value to a state
+ */
 
-
-const Input = (props) => {
+const Input = ({ placeholder, type, className, inputHandler }) => {
   const style = 'bg-neutral-700 border border-neutral-400 focus:outline focus:outline-neutral-400 rounded text-sm px-5 py-3 w-full transition-all'
 
   const inputChangeHandler = (e) => {
-    console.log('Input Handler : ' + props.placeholder)
+    console.log('Input Handler : ' + placeholder)
     console.log(e.target.value);
-    props.inputHandler(e.target.value);
+    inputHandler(e.target.value);
   }
 
-  if (props.type === "file") {
+  if (type === "file") {
     return (
       <>
         <label for="file-upload" className="btn-secondary">
@@ -19,16 +25,16 @@ const Input = (props) => {
       </>
     )
   }
-  else if (props.type === "textarea") {
-    return <textarea placeholder={props.placeholder} className={`${style} ${props.className ?? ''}`}></textarea>
+  else if (type === "textarea") {
+    return <textarea placeholder={placeholder} className={`${style} ${className ?? ''}`}></textarea>
   }
   else {
     return (
       <input
         onBlur={inputChangeHandler}
-        type={props.type}
-        placeholder={props.placeholder}
-        className={`${style} ${props.className ?? ''}`}
+        type={type}
+        placeholder={placeholder}
+        className={`${style} ${className ?? ''}`}
       />
     )
   }

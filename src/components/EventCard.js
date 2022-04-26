@@ -3,12 +3,9 @@ import Button from "./Button"
 const EventCard = () => {
   return (
     <>
-
-      <div className="w-64  border border-neutral-400 rounded-lg shadow flex flex-col overflow-hidden">
+      <div className="w-64 border border-neutral-400 rounded-lg shadow flex flex-col overflow-hidden">
         <div className="h-56 bg-[url(../public/images/jpeg/lorenzo-herrera.jpg)] bg-cover bg-center">
           <div className="mt-4 ml-40 w-16 h-20 bg-primary-900 rounded-md"></div>
-
-
         </div>
         <div className="bg-primary-900 text-white flex flex-col p-4">
           <div className="flex justify-between">

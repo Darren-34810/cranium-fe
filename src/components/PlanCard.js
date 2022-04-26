@@ -1,6 +1,11 @@
 import Button from "./Button";
 import Image from "./Image";
 
+/**
+ * Input Component
+ * @param {String} variant - PlanCard variant: <PlanCard variant="best-seller">
+ * @param {String} className - Additional classes for the button
+ */
 const PlanCard = ({ variant, className }) => {
   if (variant === "best-seller") {
     return (
