@@ -50,18 +50,14 @@ const SignIn = () => {
             placeholder="Email"
             className="border-none mb-4"
             value={email}
-            onChange={(e) => {
-              setEmail(e.target.value);
-            }}
+            inputHandler={(valueCallback) => setEmail(valueCallback)}
           />
           <Input
             type="password"
             placeholder="Password"
             className="border-none mb-4"
             value={password}
-            onChange={(e) => {
-              setPassword(e.target.value);
-            }}
+            inputHandler={(valueCallback) => setPassword(valueCallback)}
           />
           <Button
             size="large"
