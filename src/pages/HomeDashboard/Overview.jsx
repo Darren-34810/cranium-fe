@@ -17,7 +17,7 @@ const Overview = () => {
         {/*  Site header */}
         <Header sidebarOpen={sidebarOpen} setSidebarOpen={setSidebarOpen}/>
         <main>
-          <div className="flex-1 bg-primary-700 h-screen">
+          <div className="flex-1 bg-primary-700 h-screen ">
             <div className="mx-0 p-8 font-bold text-white">
               OVERVIEW
             </div>

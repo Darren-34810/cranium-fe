@@ -28,13 +28,15 @@ import UserGroups from "./pages/AdminDashboard/UserGroups";
 import UserProfile from "./pages/AdminDashboard/UserProfile";
 import MediaInput from "./pages/AdminDashboard/MediaInput";
 import HomepageFirst from "./pages/HomepageFirst";
+import ComingSoon from "./pages/ComingSoon";
 
 function App() {
   return (
     <Router>
       <Switch>
-        <Redirect exact from={'/'} to={'/welcome'}/>
-        <Route exact path="/welcome" component={Welcome}/>
+        <Redirect exact from={'/'} to={'/soon'}/>
+        <Route exact path={'/soon'} component={ComingSoon}/>
+        <Route exact path={'/welcome'} component={Welcome}/>
         <Route exact path={'/dashboard'} component={Dashboard}/>
         <Route exact path={'/homepage'} component={Homepage}/>
         <Route exact path={'/homepagefirst'} component={HomepageFirst}/>
