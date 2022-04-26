@@ -18,19 +18,19 @@ const SignUp = () => {
   const SignUpForm = async (e) => {
     e.preventDefault();
     try {
-      console.log(name);
-      console.log(email);
-      console.log(password);
-      console.log(confPassword);
-      // await axios.post('http://localhost:5000/users', {
-      //   name: name,
-      //   email: email,
-      //   password: password,
-      //   confPassword: confPassword,
-      // }).then(function (res) {
-      //   console.log(res)
-      // })
-      // history.push("/signin")
+      // console.log(name);
+      // console.log(email);
+      // console.log(password);
+      // console.log(confPassword);
+      await axios.post('http://localhost:5000/users', {
+        name: name,
+        email: email,
+        password: password,
+        confPassword: confPassword,
+      }).then(function (res) {
+        console.log(res)
+      })
+      history.push("/signin")
     } catch (error) {
       if (error.res) {
         setMsg(error.response.data.msg);

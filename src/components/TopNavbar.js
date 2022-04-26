@@ -1,9 +1,24 @@
 import React, {createRef, useEffect, useState} from "react";
-import { Link } from "react-router-dom";
+import {Link, useHistory} from "react-router-dom";
 import axios from "axios";
 import jwt_decode from "jwt-decode";
+import Button from "./Button";
 
 const TopNavbar = () => {
+  const history = useHistory();
+
+  const logout = () => {
+    console.log('Log Out Top Navbar');
+    // try{
+    //   await axios.delete('http://localhost:5000/logout')
+    //     .then(function (res) {
+    //     console.log(res)})
+    //   history.push('/signin')
+    // }catch(error){
+    //   console.log(error)
+    // }
+  }
+
   const [name, setName] = useState('');
   const [token, setToken] = useState('');
 
@@ -12,10 +27,11 @@ const TopNavbar = () => {
   }, [])
   const refreshToken = async () => {
     try {
+
       const response = await axios.get('http://localhost:5000/token');
       setToken(response.data.accessToken);
       const decoded = jwt_decode(response.data.accessToken)
-      console.log(decoded)
+      setName(decoded.name)
     } catch (error) {
 
     }
@@ -60,6 +76,16 @@ const TopNavbar = () => {
             <li className="ml-0 sm:ml-6 font-semibold">
               <a href="#contact" className="inline-block py-2 sm:py-0 text-base md:text-lg text-neutral-50 no-underline hover:text-secondary-500 transition">Contact Us</a>
             </li>
+            <li className="ml-0 sm:ml-6 font-semibold">
+              <a href="#contact" className="inline-block py-2 sm:py-0 text-base md:text-lg text-neutral-50 no-underline hover:text-secondary-500 transition">Hello, {name}</a>
+            </li>
+            <Button
+              variant="secondary"
+              size="large"
+              isCustom={true}
+              className="mx-4"
+              clickHandler={logout}
+            >Logout</Button>
           </ul>
         </div>
       </div>
