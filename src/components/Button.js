@@ -11,7 +11,7 @@ import { Link } from "react-router-dom"
  * @param {String} variant - Button variant: <Button variant="primary|secondary|tertiary">
  * @param {String} className - Additional classes for the button
  */
-const Button = ({ children, isCustom, type, href, size, variant, className,props }) => {
+const Button = ({ children, isCustom, type, href, size, variant, className, clickHandler }) => {
 
 
   // const onClickHandler = (e) => {
@@ -79,6 +79,7 @@ const Button = ({ children, isCustom, type, href, size, variant, className,props
       <button
         ref={ref}
         type={type}
+        onClick={clickHandler}
         className={`${btnClass} ${className ?? ''}`}>
         {children}
       </button>

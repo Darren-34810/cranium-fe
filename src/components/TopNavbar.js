@@ -6,15 +6,17 @@ import Button from "./Button";
 
 const TopNavbar = () => {
   const history = useHistory();
-  const Logout = async() =>{
-    try{
-      await axios.delete('http://localhost:5000/logout')
-        .then(function (res) {
-        console.log(res)})
-      history.push('/signin')
-    }catch(error){
-      console.log(error)
-    }
+
+  const logout = () => {
+    console.log('Log Out Top Navbar');
+    // try{
+    //   await axios.delete('http://localhost:5000/logout')
+    //     .then(function (res) {
+    //     console.log(res)})
+    //   history.push('/signin')
+    // }catch(error){
+    //   console.log(error)
+    // }
   }
 
   const [name, setName] = useState('');
@@ -82,7 +84,7 @@ const TopNavbar = () => {
               size="large"
               isCustom={true}
               className="mx-4"
-              onClick={Logout}
+              clickHandler={logout}
             >Logout</Button>
           </ul>
         </div>
