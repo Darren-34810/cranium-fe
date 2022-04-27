@@ -22,7 +22,11 @@ const ComingSoon = () => {
           </p>
           <div className="flex flex-col items-center sm:items-start mt-10">
               <h3 className="text-neutral-300 text-xl sm:text-2xl lg:text-3xl font-semibold">Get in touch with us!</h3>
-              <Button variant="primary" size="large" isCustom={true} href="https://wa.me/+628179101889" className="mt-8">Contact Us</Button>
+            <a className="btn btn-primary btn-lg btn-custom mt-8" href="https://wa.me/+628179101889" target={'_blank'}>
+              Contact Us
+            </a>
+            {/*Jika menggunakan component button tidak bisa newtabe*/}
+            {/*<Button variant="primary" size="large" isCustom={true} href="https://wa.me/+628179101889" className="mt-8">Contact Us</Button>*/}
           </div>
         </div>
         <div className="w-48 flex justify-end items-center border-[5px] border-secondary-500 shadow-green mx-auto my-12 sm:mx-0 sm:mb-24 lg:my-0 z-10">
