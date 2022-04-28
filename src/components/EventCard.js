@@ -5,7 +5,7 @@ const EventCard = () => {
     <>
       <div className="w-64 border border-neutral-400 rounded-lg shadow flex flex-col overflow-hidden">
         <div className="h-56 bg-[url(../public/images/jpeg/lorenzo-herrera.jpg)] bg-cover bg-center">
-          <div className="mt-4 ml-40 w-16 h-20 bg-primary-900 rounded-md"></div>
+          <div className="mt-4 ml-40 w-16 h-20 bg-primary-900 rounded-md"/>
         </div>
         <div className="bg-primary-900 text-white flex flex-col p-4">
           <div className="flex justify-between">
@@ -15,7 +15,7 @@ const EventCard = () => {
               </div>
               <a className="font-semibold text-lg">90's Tech</a>
               <br />
-              <a classname="text-sm">The technologies we use nowadays is the evolution from the 90’s tech. Reveal interesting facts about the 90’s tech with us!
+              <a className="text-sm">The technologies we use nowadays is the evolution from the 90’s tech. Reveal interesting facts about the 90’s tech with us!
                 <Button className="mt-2 object-justify-center text-emerald-900">See more {'>'}</Button></a>
             </div>
           </div>

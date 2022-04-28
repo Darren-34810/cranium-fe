@@ -48,7 +48,7 @@ const TopNavbar = () => {
   return (
     <nav className="bg-primary-500">
       <div className="max-w-screen-2xl flex items-center justify-between flex-wrap px-8 sm:px-10 py-4 sm:py-5 mx-auto z-10 top-0">
-        <Link href="/" className="text-xl sm:text-2xl font-bold text-neutral-50">
+        <Link to="/" className="text-xl sm:text-2xl font-bold text-neutral-50">
           TEMU
         </Link>
 

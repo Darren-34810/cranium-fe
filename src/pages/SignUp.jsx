@@ -1,17 +1,17 @@
 import Button from "../components/Button";
 import Input from "../components/Input";
-import { useState } from "react";
+import {useState} from "react";
 import axios from "axios";
-import { useHistory } from "react-router-dom";
+import {useHistory} from "react-router-dom";
 
 const SignUp = () => {
-  // const [firstName, setFirstName] = useState('')
-  // const [lastName, setLastName] = useState('')
-  const [name, setName] = useState("");
+  const [firstName, setFirstName] = useState('')
+  const [lastName, setLastName] = useState('')
+  // const [name, setName] = useState("");
   const [email, setEmail] = useState("");
-  // const [number, setNumber] = useState('')
+  const [phoneNumber, setPhoneNumber] = useState('')
   const [password, setPassword] = useState("");
-  const [confPassword, setConfPassword] = useState("");
+  // const [confPassword, setConfPassword] = useState("");
   const [msg, setMsg] = useState("");
   const history = useHistory();
 
@@ -23,17 +23,18 @@ const SignUp = () => {
       // console.log(password);
       // console.log(confPassword);
       await axios.post('http://localhost:5000/users', {
-        name: name,
+        firstName: firstName,
+        lastName: lastName,
         email: email,
+        phoneNumber : phoneNumber,
         password: password,
-        confPassword: confPassword,
       }).then(function (res) {
         console.log(res)
       })
       history.push("/signin")
     } catch (error) {
       if (error.res) {
-        setMsg(error.response.data.msg);
+        setMsg(error.response.data);
       }
     }
   };
@@ -43,7 +44,7 @@ const SignUp = () => {
         <div className="max-w-4xl flex flex-col md:flex-row justify-evenly items-center py-16 md:py-0">
           <div className="w-[85%] md:w-2/5 mb-10 md:mb-0 flex flex-col justify-center">
             <div className="flex flex-col lg:flex-row justify-center items-center lg:items-stretch mt-8">
-              <div className="hl lg:vl"></div>
+              <div className="hl lg:vl"/>
               <h2 className="text-neutral-50 text-2xl sm:text-4xl font-bold py-1 lg:mr-8 xl:mr-0">
                 Sign Up to TEMU-
               </h2>
@@ -72,29 +73,30 @@ const SignUp = () => {
               onSubmit={SignUpForm}
             >
               <p className="has-text-centered">{msg}</p>
-              {/*<Input type="text" placeholder="First Name" className="border-none mb-4" value={firstName} onChange={(e) => {*/}
-              {/*  setFirstName(e.target.value)*/}
-              {/*}}/>*/}
-              {/*<Input type="text" placeholder="Last Name" className="border-none mb-4"*/}
-              {/*       value={lastName} onChange={(e) => {*/}
-              {/*  setLastName(e.target.value)*/}
-              {/*}}/>*/}
-
-              {/* <Input type="text" placeholder="Name" className="border-none mb-4" */}
-              {/* value={name} onChange={(e) => {setName(e.target.value)}} /> */}
-
               <Input
                 type="text"
-                placeholder="Name"
+                placeholder="First Name"
                 className="border-none mb-4"
-                value={name}
-                inputHandler={(valueCallback) => setName(valueCallback)}
+                value={firstName}
+                  inputHandler={(valueCallback) => setFirstName(valueCallback)}
               />
+              <Input
+                type="text"
+                placeholder="Last Name"
+                className="border-none mb-4"
+                value={lastName}
+                inputHandler={(valueCallback) => setLastName(valueCallback)}
+              />
+              {/* <Input type="text" placeholder="Name" className="border-none mb-4" */}
+              {/* value={name} onChange={(e) => {setName(e.target.value)}} /> */}
+              {/*<Input*/}
+              {/*  type="text"*/}
+              {/*  placeholder="Name"*/}
+              {/*  className="border-none mb-4"*/}
+              {/*  value={name}*/}
+              {/*  inputHandler={(valueCallback) => setName(valueCallback)}*/}
+              {/*/>*/}
 
-              {/*<Input type="text" placeholder="Phone Number" className="border-none mb-4"*/}
-              {/*       value={number} onChange={(e) => {*/}
-              {/*  setNumber(e.target.value)*/}
-              {/*}}/>*/}
               <Input
                 type="email"
                 placeholder="Email"
@@ -102,7 +104,13 @@ const SignUp = () => {
                 value={email}
                 inputHandler={(valueCallback) => setEmail(valueCallback)}
               />
-
+              <Input
+                type="text"
+                placeholder="Phone Number"
+                className="border-none mb-4"
+                value={phoneNumber}
+                inputHandler={(valueCallback) => setPhoneNumber(valueCallback)}
+              />
               <Input
                 type="password"
                 placeholder="Password"
@@ -110,13 +118,13 @@ const SignUp = () => {
                 value={password}
                 inputHandler={(valueCallback) => setPassword(valueCallback)}
               />
-              <Input
-                type="password"
-                placeholder=" Confirm Password"
-                className="border-none mb-4"
-                value={confPassword}
-                inputHandler={(valueCallback) => setConfPassword(valueCallback)}
-              />
+              {/*<Input*/}
+              {/*  type="password"*/}
+              {/*  placeholder=" Confirm Password"*/}
+              {/*  className="border-none mb-4"*/}
+              {/*  value={confPassword}*/}
+              {/*  inputHandler={(valueCallback) => setConfPassword(valueCallback)}*/}
+              {/*/>*/}
 
               <Button
                 size="large"
