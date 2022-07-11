@@ -71,7 +71,7 @@ function App() {
         {/*<Route exact path="/dashboard" component={DashboardOverview} />*/}
         {/*<Route exact path="/dashboard/overview" component={DashboardOverview} />*/}
         {/*<Route exact path="/dashboard/events" component={DashboardEvents} />*/}
-        {/*<Route exact path="/dashboard/create" component={DashboardCreate} />*/}
+        {/* <Route exact path="/dashboard/create" component={DashboardCreate} /> */}
         {/*<Route exact path="/dashboard/billing" component={DashboardBilling} />*/}
         {/*<Route exact path="/dashboard/integration" component={DashboardIntegration} />*/}
         {/*<Route exact path="/dashboard/events" component={DashboardEvents} />*/}

@@ -1,7 +1,4 @@
 
-
-
-
 <div className="flex-1 bg-primary-700">
           <div className="w-full bg-grey-lightest">
             <div className="container mx-auto">
